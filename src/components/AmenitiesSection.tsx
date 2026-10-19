@@ -14,6 +14,7 @@ import {
 } from "lucide-react";
 import { useLanguage } from "@/context/LanguageContext";
 import { translations } from "@/lib/translations";
+import { hotelConfig } from "@/config/hotel.config";
 
 const AMENITY_ICONS = [
   UtensilsCrossed, // 0: صبحانه اصیل در حیاط مرکزی
@@ -139,7 +140,7 @@ export function AmenitiesSection() {
 
                 {/* Subtle Card Bottom Accent */}
                 <div className="pt-4 mt-3 border-t border-[#f0ece1] flex items-center justify-between text-[11px] text-[#8c7b64]">
-                  <span>عمارت تاریخی فرهادی</span>
+                  <span>{hotelConfig.brand.fullNameFa}</span>
                   <span className="w-1.5 h-1.5 rounded-full bg-[#c59b27]" />
                 </div>
               </div>

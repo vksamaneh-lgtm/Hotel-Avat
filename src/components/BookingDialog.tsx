@@ -123,24 +123,26 @@ export function BookingDialog({
             </a>
 
             {/* Landline */}
-            <a
-              href={`tel:${isEn ? hotelConfig.contact.phone.international : hotelConfig.contact.phone.raw}`}
-              onClick={() => {
-                trackEvent("phone_call_click", {
-                  room: currentRoom,
-                  type: "landline",
-                  number: hotelConfig.contact.phone.raw,
-                  location: location || "booking_dialog",
-                });
-              }}
-              className="flex items-center justify-between p-4 rounded-[16px] bg-[#faf8f5] hover:bg-[#f3efe6] border border-[#dfd9cc] text-[#172554] transition-colors cursor-pointer"
-            >
-              <div className="flex items-center gap-3">
-                <Phone className="w-5 h-5 text-[#8c7b64]" />
-                <span className="text-sm font-semibold">{t.booking.landlineText}</span>
-              </div>
-              <span className="text-base font-bold tabular-nums tracking-wide" dir="ltr">{t.nav.phone}</span>
-            </a>
+            {hotelConfig.contact.phone.raw && (
+              <a
+                href={`tel:${isEn ? hotelConfig.contact.phone.international : hotelConfig.contact.phone.raw}`}
+                onClick={() => {
+                  trackEvent("phone_call_click", {
+                    room: currentRoom,
+                    type: "landline",
+                    number: hotelConfig.contact.phone.raw,
+                    location: location || "booking_dialog",
+                  });
+                }}
+                className="flex items-center justify-between p-4 rounded-[16px] bg-[#faf8f5] hover:bg-[#f3efe6] border border-[#dfd9cc] text-[#172554] transition-colors cursor-pointer"
+              >
+                <div className="flex items-center gap-3">
+                  <Phone className="w-5 h-5 text-[#8c7b64]" />
+                  <span className="text-sm font-semibold">{t.booking.landlineText}</span>
+                </div>
+                <span className="text-base font-bold tabular-nums tracking-wide" dir="ltr">{t.nav.phone}</span>
+              </a>
+            )}
 
             {/* Mobile */}
             <a

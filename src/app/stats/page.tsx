@@ -246,7 +246,7 @@ export default function AnalyticsStatsPage() {
       const rows: string[] = [];
 
       // Title & Metadata
-      rows.push("گزارش پایش هوشمند ترافیک و سرنخ‌های فروش بوتیک هتل سنتی فرهادی شیراز");
+      rows.push("گزارش پایش هوشمند ترافیک و سرنخ‌های فروش هتل آوات اصفهان");
       rows.push(`بازه زمانی گزارش:,${data.summary.dateRangeLabel || "انتخاب شده"}`);
       rows.push(`تاریخ خروجی فایل:,${new Date().toLocaleDateString("fa-IR")} ${new Date().toLocaleTimeString("fa-IR")}`);
       rows.push("");
@@ -903,7 +903,7 @@ export default function AnalyticsStatsPage() {
                   {[
                     { label: "هیرو و معرفی عمارت (۲۵٪)", pct: data?.engagement?.scrollDepth.depth25 ?? 84 },
                     { label: "مشاهده و انتخاب اتاق‌ها (۵۰٪)", pct: data?.engagement?.scrollDepth.depth50 ?? 68 },
-                    { label: "موقعیت و شاهچراغ (۷۵٪)", pct: data?.engagement?.scrollDepth.depth75 ?? 46 },
+                    { label: "موقعیت و جاذبه‌های اصفهان (۷۵٪)", pct: data?.engagement?.scrollDepth.depth75 ?? 46 },
                     { label: "انتهای صفحه و گالری (۱۰۰٪)", pct: data?.engagement?.scrollDepth.depth100 ?? 29 },
                   ].map((s, idx) => (
                     <div key={idx} className="space-y-1">
@@ -948,7 +948,7 @@ export default function AnalyticsStatsPage() {
                 </div>
 
                 <p className="text-[11px] text-[#555f6d] leading-relaxed">
-                  میانگین زمانی که هر مسافر صرف بررسی عکس‌های عمارت قاجاری، امکانات و اتاق‌ها می‌کند.
+                  میانگین زمانی که هر مسافر صرف بررسی تصاویر، امکانات و اتاق‌های هتل آوات می‌کند.
                 </p>
               </div>
 
@@ -1016,7 +1016,7 @@ export default function AnalyticsStatsPage() {
                 </h2>
               </div>
               <p className="text-xs text-[#555f6d]">
-                تراکم ثبت لید و تماس‌های مسافران به تفکیک ۲۴ ساعت شبانه‌روز و روزهای هفته (به وقت شیراز)
+                تراکم ثبت لید و تماس‌های مسافران به تفکیک ۲۴ ساعت شبانه‌روز و روزهای هفته (به وقت اصفهان)
               </p>
             </div>
 

@@ -113,15 +113,18 @@ export function Footer() {
 
         {/* Minimal Direct Contacts & Quick Action */}
         <div className="flex flex-wrap items-center justify-center gap-4 sm:gap-6 text-xs sm:text-sm text-[#555f6d] mb-8 pb-4">
-          <a
-            href={`tel:${isEn ? hotelConfig.contact.phone.international : hotelConfig.contact.phone.raw}`}
-            className="flex items-center gap-2 hover:text-[#172554] transition-colors font-semibold"
-          >
-            <Phone className="w-3.5 h-3.5 text-[#8c7b64]" />
-            <span dir="ltr">{t.nav.phone}</span>
-          </a>
-
-          <span className="text-[#8c7b64]/40 select-none hidden sm:inline">·</span>
+          {hotelConfig.contact.phone.raw && (
+            <>
+              <a
+                href={`tel:${isEn ? hotelConfig.contact.phone.international : hotelConfig.contact.phone.raw}`}
+                className="flex items-center gap-2 hover:text-[#172554] transition-colors font-semibold"
+              >
+                <Phone className="w-3.5 h-3.5 text-[#8c7b64]" />
+                <span dir="ltr">{t.nav.phone}</span>
+              </a>
+              <span className="text-[#8c7b64]/40 select-none hidden sm:inline">·</span>
+            </>
+          )}
 
           <a
             href={`https://wa.me/${hotelConfig.contact.whatsapp.number}`}

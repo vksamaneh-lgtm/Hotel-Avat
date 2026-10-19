@@ -14,13 +14,14 @@ import {
 import { useLanguage } from "@/context/LanguageContext";
 import { translations } from "@/lib/translations";
 import { ATTRACTIONS_DATA } from "./HotelMap";
+import { hotelConfig } from "@/config/hotel.config";
 
 // Dynamic import of Leaflet map to prevent SSR issues
 const HotelMap = dynamic(() => import("./HotelMap"), {
   ssr: false,
   loading: () => (
     <div className="w-full h-full min-h-[500px] bg-[#f0ece1]/50 rounded-[28px] flex items-center justify-center text-[#555f6d] text-sm font-medium animate-pulse">
-      در حال بارگذاری نقشه تعاملی شیراز...
+      در حال بارگذاری نقشه تعاملی {hotelConfig.location.cityFa}...
     </div>
   ),
 });
@@ -50,7 +51,7 @@ export function LocationSection() {
           {/* Direct Navigation Links */}
           <div className="flex flex-wrap items-center gap-2">
             <a
-              href="https://maps.google.com/?q=29.6112,52.5442"
+              href={`https://maps.google.com/?q=${hotelConfig.location.coordinates[0]},${hotelConfig.location.coordinates[1]}`}
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-1.5 px-3.5 py-2 rounded-full border border-[#dfd9cc] bg-white hover:bg-[#faf8f5] text-xs font-semibold text-[#172554] shadow-2xs transition-all hover:scale-105"
@@ -59,7 +60,7 @@ export function LocationSection() {
               <span>{t.location.googleMaps}</span>
             </a>
             <a
-              href="https://neshan.org/maps/@29.6112,52.5442,16z"
+              href={`https://neshan.org/maps/@${hotelConfig.location.coordinates[0]},${hotelConfig.location.coordinates[1]},${hotelConfig.location.mapZoom}z`}
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-1.5 px-3.5 py-2 rounded-full border border-[#dfd9cc] bg-white hover:bg-[#faf8f5] text-xs font-semibold text-[#172554] shadow-2xs transition-all hover:scale-105"
@@ -68,7 +69,7 @@ export function LocationSection() {
               <span>{t.location.neshan}</span>
             </a>
             <a
-              href="https://balad.ir/location?latitude=29.6112&longitude=52.5442"
+              href={`https://balad.ir/location?latitude=${hotelConfig.location.coordinates[0]}&longitude=${hotelConfig.location.coordinates[1]}`}
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-1.5 px-3.5 py-2 rounded-full border border-[#dfd9cc] bg-white hover:bg-[#faf8f5] text-xs font-semibold text-[#172554] shadow-2xs transition-all hover:scale-105"

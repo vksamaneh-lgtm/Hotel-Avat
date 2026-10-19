@@ -102,10 +102,11 @@ export default function HotelMap({
         attribution: "© OpenStreetMap",
       }).addTo(map);
 
-      const hotelLabel = isEn ? "Farhadi Boutique Hotel" : "بوتیک هتل عمارت فرهادی";
-      const hotelAddress = isEn
-        ? "Shiraz, Namazi 3-way, Dastgheib St, Alley 6"
-        : "شیراز، سه‌راه نمازی، خیابان شهید دستغیب، کوچه ۶";
+      const hotelLabel = isEn ? hotelConfig.meta.nameEn : hotelConfig.meta.nameFa;
+      const hotelAddress = isEn ? hotelConfig.location.addressEn : hotelConfig.location.addressFa;
+      const hotelDescriptor = isEn
+        ? hotelConfig.meta.subtitleEn
+        : hotelConfig.meta.subtitleFa;
 
       // Custom Hotel Marker with exact pinpoint anchor and downward pointer
       const hotelIcon = L.divIcon({
@@ -132,7 +133,7 @@ export default function HotelMap({
             <div style="font-size: 14px; font-weight: 800; color: #172554; margin-bottom: 4px;">${hotelLabel}</div>
             <div style="font-size: 12px; color: #555f6d; line-height: 1.5;">${hotelAddress}</div>
             <div style="margin-top: 8px; display: inline-block; background: #f0ece1; color: #172554; font-size: 11px; font-weight: 700; padding: 2px 8px; border-radius: 10px;">
-              ${isEn ? "Heritage Qajar Mansion" : "عمارت تاریخی دوره قاجار"}
+              ${hotelDescriptor}
             </div>
           </div>`
         );

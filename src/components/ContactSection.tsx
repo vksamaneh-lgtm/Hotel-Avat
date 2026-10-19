@@ -34,16 +34,23 @@ export function ContactSection() {
             </h3>
 
             {/* Landline */}
-            <div className="py-3">
-              <span className="block text-xs text-[#8c7b64] font-medium mb-1">{t.contact.landlineLabel}</span>
-              <a
-                href={`tel:${isEn ? hotelConfig.contact.phone.international : hotelConfig.contact.phone.raw}`}
-                className="text-2xl sm:text-3xl font-bold text-[#172554] hover:text-[#0f172a] transition-colors inline-block"
-                dir="ltr"
-              >
-                {t.nav.phone}
-              </a>
-            </div>
+            {hotelConfig.contact.phone.raw ? (
+              <div className="py-3">
+                <span className="block text-xs text-[#8c7b64] font-medium mb-1">{t.contact.landlineLabel}</span>
+                <a
+                  href={`tel:${isEn ? hotelConfig.contact.phone.international : hotelConfig.contact.phone.raw}`}
+                  className="text-2xl sm:text-3xl font-bold text-[#172554] hover:text-[#0f172a] transition-colors inline-block"
+                  dir="ltr"
+                >
+                  {t.nav.phone}
+                </a>
+              </div>
+            ) : (
+              <div className="py-3">
+                <span className="block text-xs text-[#8c7b64] font-medium mb-1">{t.contact.landlineLabel}</span>
+                <span className="text-base font-semibold text-[#555f6d]">{t.nav.phone}</span>
+              </div>
+            )}
 
             {/* Mobile */}
             <div className="py-3 border-t border-[#dfd9cc]">
@@ -109,7 +116,9 @@ export function ContactSection() {
 
               <div className="pt-2 border-t border-[#dfd9cc]">
                 <strong className="block text-sm font-semibold text-[#172554] mb-0.5">{t.contact.emailTitle}</strong>
-                <p dir="ltr" className={`text-[#172554] ${isEn ? "text-left" : "text-right"}`}>info@farhadihotel.com</p>
+                <p dir="ltr" className={`text-[#172554] ${isEn ? "text-left" : "text-right"}`}>
+                  {hotelConfig.contact.social.email ?? hotelConfig.contact.social.instagramHandle}
+                </p>
               </div>
             </div>
           </div>

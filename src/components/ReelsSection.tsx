@@ -7,6 +7,7 @@ import { InstagramIcon } from "@/components/ui/icons";
 import { Dialog, DialogContent, DialogTitle } from "@/components/ui/dialog";
 import { useLanguage } from "@/context/LanguageContext";
 import { translations } from "@/lib/translations";
+import { hotelConfig } from "@/config/hotel.config";
 
 export function ReelsSection() {
   const { language } = useLanguage();
@@ -80,17 +81,17 @@ export function ReelsSection() {
         {/* Header row with Instagram channel link */}
         <div className="flex items-center justify-between mb-4 px-1">
           <span className="text-xs sm:text-sm font-bold text-[#172554] tracking-tight">
-            {isEn ? "Farhadi Video Stories" : "استوری‌ها و ویدیوهای عمارت"}
+            {isEn ? "Avat Hotel Video Stories" : "ویدیوهای هتل آوات"}
           </span>
 
           <a
-            href="https://www.instagram.com/farhadi.boutique.hotel/"
+            href={hotelConfig.contact.social.instagramUrl}
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-white/95 hover:bg-white text-[#172554] hover:text-[#E1306C] border border-[#dfd9cc] text-xs font-semibold shadow-2xs transition-all hover:scale-105 cursor-pointer"
           >
             <InstagramIcon className="w-3.5 h-3.5 text-[#E1306C]" />
-            <span dir="ltr">@farhadi.boutique.hotel</span>
+            <span dir="ltr">{hotelConfig.contact.social.instagramHandle}</span>
           </a>
         </div>
 
@@ -210,18 +211,18 @@ export function ReelsSection() {
 
                 <div className="flex items-center justify-between">
                   <a
-                    href="https://www.instagram.com/farhadi.boutique.hotel/"
+                    href={hotelConfig.contact.social.instagramUrl}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="flex items-center gap-2 hover:opacity-85 transition-opacity group cursor-pointer"
-                    title="Instagram: @farhadi.boutique.hotel"
+                    title={`Instagram: ${hotelConfig.contact.social.instagramHandle}`}
                   >
                     <div className="w-7 h-7 rounded-full overflow-hidden bg-white relative border border-white/30">
                       <Image src="/images/logo.jpg" alt="Logo" fill sizes="28px" className="object-contain" />
                     </div>
                     <div className="flex flex-col text-right">
                       <span className="text-xs font-bold text-white drop-shadow leading-tight">{t.reels.hotelTitle}</span>
-                      <span className="text-[10px] text-white/70 group-hover:underline leading-tight" dir="ltr">@farhadi.boutique.hotel</span>
+                      <span className="text-[10px] text-white/70 group-hover:underline leading-tight" dir="ltr">{hotelConfig.contact.social.instagramHandle}</span>
                     </div>
                   </a>
 

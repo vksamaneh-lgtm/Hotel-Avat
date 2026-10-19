@@ -19,7 +19,7 @@ export function LanguageProvider({ children }: { children: React.ReactNode }) {
 
   useEffect(() => {
     // Read saved preference or default to Persian
-    const saved = localStorage.getItem("farhadi_lang") as Language | null;
+    const saved = localStorage.getItem("avat_lang") as Language | null;
     if (saved && (saved === "fa" || saved === "en")) {
       setLanguageState(saved);
       document.documentElement.lang = saved;
@@ -32,7 +32,7 @@ export function LanguageProvider({ children }: { children: React.ReactNode }) {
 
   const setLanguage = (lang: Language) => {
     setLanguageState(lang);
-    localStorage.setItem("farhadi_lang", lang);
+    localStorage.setItem("avat_lang", lang);
     document.documentElement.lang = lang;
     document.documentElement.dir = lang === "en" ? "ltr" : "rtl";
   };

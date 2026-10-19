@@ -82,13 +82,15 @@ export function Navbar() {
             <span className="truncate font-light text-white/90">{t.nav.address}</span>
           </div>
           <div className="flex items-center gap-5">
-            <a
-              href={`tel:${hotelConfig.contact.phone.raw}`}
-              className="inline-flex items-center gap-1.5 hover:text-white transition-colors"
-            >
-              <Phone className="w-3 h-3 text-[#c59b27]" />
-              <span className="font-semibold" dir="ltr">{t.nav.phone}</span>
-            </a>
+            {hotelConfig.contact.phone.raw && (
+              <a
+                href={`tel:${hotelConfig.contact.phone.raw}`}
+                className="inline-flex items-center gap-1.5 hover:text-white transition-colors"
+              >
+                <Phone className="w-3 h-3 text-[#c59b27]" />
+                <span className="font-semibold" dir="ltr">{t.nav.phone}</span>
+              </a>
+            )}
             <a
               href={`https://wa.me/${hotelConfig.contact.whatsapp.number}`}
               target="_blank"
@@ -288,21 +290,23 @@ export function Navbar() {
 
           {/* Bottom Direct Contacts & Social Strip */}
           <div className="p-4 sm:p-5 border-t border-[#dfd9cc] bg-white/60 pb-[max(1.5rem,env(safe-area-inset-bottom))] flex flex-col gap-3">
-            <div className="grid grid-cols-2 gap-2.5">
-              <a
-                href={`tel:${hotelConfig.contact.phone.raw}`}
-                onClick={() => {
-                  trackEvent("phone_call_click", {
-                    type: "landline",
-                    number: hotelConfig.contact.phone.raw,
-                    location: "mobile_drawer",
-                  });
-                }}
-                className="h-12 rounded-xl bg-[#172554] text-white flex items-center justify-center gap-2 text-xs font-bold shadow-sm active:scale-98 transition-all cursor-pointer"
-              >
-                <Phone className="w-4 h-4 text-[#c59b27]" />
-                <span dir="ltr">{t.nav.phone}</span>
-              </a>
+            <div className={hotelConfig.contact.phone.raw ? "grid grid-cols-2 gap-2.5" : "grid grid-cols-1 gap-2.5"}>
+              {hotelConfig.contact.phone.raw && (
+                <a
+                  href={`tel:${hotelConfig.contact.phone.raw}`}
+                  onClick={() => {
+                    trackEvent("phone_call_click", {
+                      type: "landline",
+                      number: hotelConfig.contact.phone.raw,
+                      location: "mobile_drawer",
+                    });
+                  }}
+                  className="h-12 rounded-xl bg-[#172554] text-white flex items-center justify-center gap-2 text-xs font-bold shadow-sm active:scale-98 transition-all cursor-pointer"
+                >
+                  <Phone className="w-4 h-4 text-[#c59b27]" />
+                  <span dir="ltr">{t.nav.phone}</span>
+                </a>
+              )}
 
               <a
                 href={buildAttributedWhatsAppUrl(hotelConfig.contact.whatsapp.number, undefined, isEn ? "en" : "fa")}
@@ -321,13 +325,13 @@ export function Navbar() {
             </div>
 
             <a
-              href="https://www.instagram.com/farhadi.boutique.hotel/"
+              href={hotelConfig.contact.social.instagramUrl}
               target="_blank"
               rel="noopener noreferrer"
               className="h-11 rounded-xl bg-white border border-[#dfd9cc] text-[#172554] hover:text-[#E1306C] flex items-center justify-center gap-2 text-xs font-bold shadow-2xs active:scale-98 transition-all"
             >
               <InstagramIcon className="w-4 h-4 text-[#E1306C]" />
-              <span dir="ltr">@farhadi.boutique.hotel</span>
+              <span dir="ltr">{hotelConfig.contact.social.instagramHandle}</span>
             </a>
           </div>
         </div>
