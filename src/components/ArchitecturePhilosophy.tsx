@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useEffect, useRef, useState } from "react";
+import React, { useState } from "react";
 import Image from "next/image";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import { useLanguage } from "@/context/LanguageContext";
@@ -11,48 +11,20 @@ export function ArchitecturePhilosophy() {
   const t = translations[language];
   const isEn = language === "en";
 
-  const sectionRef = useRef<HTMLElement | null>(null);
-  const [scrollY, setScrollY] = useState(0);
   const [roomImageIndex, setRoomImageIndex] = useState(0);
-
-  useEffect(() => {
-    let animationFrameId: number;
-
-    const handleScroll = () => {
-      if (!sectionRef.current) return;
-      const rect = sectionRef.current.getBoundingClientRect();
-      const offset = -rect.top;
-      setScrollY(offset);
-    };
-
-    const onScroll = () => {
-      cancelAnimationFrame(animationFrameId);
-      animationFrameId = requestAnimationFrame(handleScroll);
-    };
-
-    window.addEventListener("scroll", onScroll, { passive: true });
-    handleScroll();
-
-    return () => {
-      window.removeEventListener("scroll", onScroll);
-      cancelAnimationFrame(animationFrameId);
-    };
-  }, []);
 
   return (
     <section
-      ref={sectionRef}
       id="story"
       className="relative py-24 md:py-36 bg-[#faf8f5] text-[#0494D6] border-b border-[#e8e4db] overflow-hidden"
     >
       {/* Low-contrast Persian border motif keeps the story surface quiet. */}
       <div
-        className="absolute inset-x-0 top-6 bottom-0 pointer-events-none z-0 opacity-[0.12] transition-transform duration-75 ease-out"
+        className="absolute inset-x-0 top-0 h-20 sm:h-24 pointer-events-none z-0 opacity-[0.12]"
         style={{
-          transform: `translate3d(0, ${scrollY * 0.06}px, 0)`,
           backgroundImage: "url('/images/avat-pattern-border.png')",
           backgroundRepeat: "repeat-x",
-          backgroundPosition: "center 10%",
+          backgroundPosition: "center center",
           backgroundSize: "min(800px, 100vw) auto",
         }}
       />
@@ -69,10 +41,9 @@ export function ArchitecturePhilosophy() {
         </div>
 
         {/* Parallax Cinematic Story Stream */}
-        <div className="flex flex-col gap-28 sm:gap-40">
+        <div className="flex flex-col gap-20 sm:gap-28 lg:gap-32">
           {t.story.scenes.map((scene, index) => {
             const isEven = index % 2 === 0;
-            const imgParallaxFactor = isEven ? 0.05 : -0.05;
             const isRoomScene = scene.id === "rooms";
             const sceneImages = "images" in scene ? scene.images : [scene.image];
             const activeImageIndex = isRoomScene
@@ -92,10 +63,6 @@ export function ArchitecturePhilosophy() {
                 >
                   <div
                     className="relative h-[360px] sm:h-[460px] lg:h-[500px] rounded-[24px] overflow-hidden border border-[#dfd9cc] shadow-lg group"
-                    style={{
-                      transform: `translate3d(0, ${scrollY * imgParallaxFactor}px, 0)`,
-                      transition: "transform 100ms ease-out",
-                    }}
                   >
                     <Image
                       src={sceneImages[activeImageIndex]}
