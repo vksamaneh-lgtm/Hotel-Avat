@@ -205,7 +205,7 @@ export const translations = {
       images: [
         { src: "/images/avat-exterior.jpeg", alt: "نمای هتل آوات اصفهان" },
         { src: "/images/avat-reception.jpeg", alt: "پذیرش هتل آوات" },
-        { src: "/images/avat-naqsh-jahan.jpg", alt: "میدان نقش جهان اصفهان" },
+        { src: "/images/avat-courtyard.jpg", alt: "حیاط و ورودی هتل آوات اصفهان" },
       ],
     },
     story: {
@@ -379,7 +379,7 @@ export const translations = {
       images: [
         { src: "/images/avat-exterior.jpeg", alt: "Avat Hotel Isfahan exterior" },
         { src: "/images/avat-reception.jpeg", alt: "Avat Hotel reception" },
-        { src: "/images/avat-naqsh-jahan.jpg", alt: "Naqsh-e Jahan Square, Isfahan" },
+        { src: "/images/avat-courtyard.jpg", alt: "Avat Hotel Isfahan courtyard and entrance" },
       ],
     },
     story: {
