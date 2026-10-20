@@ -147,21 +147,15 @@ const enRoomItems = [
 ];
 
 const faGalleryItems = [
-  { id: 1, src: "/images/hero.jpg", title: "نمای هتل آوات اصفهان", category: "hotel", categoryName: "هتل آوات" },
-  { id: 2, src: "/images/areas/reception-1.webp", title: "پذیرش و فضای ورودی هتل", category: "hotel", categoryName: "هتل آوات" },
-  { id: 3, src: "/images/room-double.jpg", title: "اتاق دوتخته دبل", category: "rooms", categoryName: "اتاق‌ها" },
-  { id: 4, src: "/images/rooms/panjdari-1.webp", title: "جزئیات اتاق‌های هتل", category: "rooms", categoryName: "اتاق‌ها" },
-  { id: 5, src: "/images/breakfast.jpg", title: "سالن صبحانه هتل", category: "services", categoryName: "خدمات" },
-  { id: 6, src: "/images/courtyard.jpg", title: "فضای عمومی هتل آوات", category: "hotel", categoryName: "هتل آوات" },
+  { id: 1, src: "/images/avat-exterior.jpeg", title: "نمای هتل آوات اصفهان", category: "hotel", categoryName: "هتل آوات" },
+  { id: 2, src: "/images/avat-reception.jpeg", title: "پذیرش و فضای ورودی هتل", category: "hotel", categoryName: "هتل آوات" },
+  { id: 3, src: "/images/avat-naqsh-jahan.jpg", title: "میدان نقش جهان اصفهان", category: "hotel", categoryName: "جاذبه‌های اصفهان" },
 ];
 
 const enGalleryItems = [
-  { id: 1, src: "/images/hero.jpg", title: "Avat Hotel Isfahan exterior", category: "hotel", categoryName: "Avat Hotel" },
-  { id: 2, src: "/images/areas/reception-1.webp", title: "Hotel reception and entrance", category: "hotel", categoryName: "Avat Hotel" },
-  { id: 3, src: "/images/room-double.jpg", title: "Double room", category: "rooms", categoryName: "Rooms" },
-  { id: 4, src: "/images/rooms/panjdari-1.webp", title: "Guest room details", category: "rooms", categoryName: "Rooms" },
-  { id: 5, src: "/images/breakfast.jpg", title: "Hotel breakfast room", category: "services", categoryName: "Services" },
-  { id: 6, src: "/images/courtyard.jpg", title: "Avat Hotel common area", category: "hotel", categoryName: "Avat Hotel" },
+  { id: 1, src: "/images/avat-exterior.jpeg", title: "Avat Hotel Isfahan exterior", category: "hotel", categoryName: "Avat Hotel" },
+  { id: 2, src: "/images/avat-reception.jpeg", title: "Hotel reception and entrance", category: "hotel", categoryName: "Avat Hotel" },
+  { id: 3, src: "/images/avat-naqsh-jahan.jpg", title: "Naqsh-e Jahan Square, Isfahan", category: "hotel", categoryName: "Isfahan landmarks" },
 ];
 
 const faReels = [
@@ -209,19 +203,16 @@ export const translations = {
       scrollHint: "رفتن به بخش داستان هتل",
       snappPayHeroBadge: hotelConfig.features.snappPay.heroDescFa,
       images: [
-        { src: "/images/hero.jpg", alt: "نمای هتل آوات اصفهان" },
-        { src: "/images/areas/reception-1.webp", alt: "پذیرش هتل آوات" },
-        { src: "/images/room-double.jpg", alt: "اتاق دوتخته هتل آوات" },
-        { src: "/images/breakfast.jpg", alt: "سالن صبحانه هتل آوات" },
-        { src: "/images/courtyard.jpg", alt: "فضای عمومی هتل آوات" },
-        { src: "/images/areas/reception-2.webp", alt: "فضای ورودی و نشیمن هتل" },
+        { src: "/images/avat-exterior.jpeg", alt: "نمای هتل آوات اصفهان" },
+        { src: "/images/avat-reception.jpeg", alt: "پذیرش هتل آوات" },
+        { src: "/images/avat-naqsh-jahan.jpg", alt: "میدان نقش جهان اصفهان" },
       ],
     },
     story: {
       heading: "روایت آوات در قلب اصفهان",
       desc: "هتل آوات در خیابان نشاط و شرق میدان نقش جهان، اقامتی ساده و آرام را در یکی از ارزشمندترین محدوده‌های گردشگری اصفهان فراهم می‌کند.",
       scenes: [
-        { id: "location", title: "نزدیک به نقش جهان و تاریخ اصفهان", caption: "از هتل آوات می‌توانید با چند دقیقه پیاده‌روی به مسجد امام، مسجد شیخ لطف‌الله، میدان نقش جهان و کاخ عالی‌قاپو برسید.", image: "/images/hero.jpg", alt: "نمای هتل آوات اصفهان در نزدیکی میدان نقش جهان" },
+        { id: "location", title: "نزدیک به نقش جهان و تاریخ اصفهان", caption: "از هتل آوات می‌توانید با چند دقیقه پیاده‌روی به مسجد امام، مسجد شیخ لطف‌الله، میدان نقش جهان و کاخ عالی‌قاپو برسید.", image: "/images/avat-naqsh-jahan.jpg", alt: "میدان نقش جهان اصفهان" },
         { id: "rooms", title: "اتاق‌هایی برای هر نوع سفر", caption: "از اتاق دوتخته برای یک نفر تا اتاق‌های سه‌تخته و چهار‌تخته، انتخاب اتاق با توجه به تعداد مهمانان و سبک سفر شما انجام می‌شود.", image: "/images/room-double.jpg", alt: "اتاق دوتخته هتل آوات اصفهان" },
         { id: "breakfast", title: "صبحانه و میزبانی روزانه", caption: "پذیرش ۲۴ ساعته، سالن صبحانه، روم‌سرویس و امکانات ضروری اتاق، اقامت شما را در اصفهان ساده و قابل اتکا می‌کند.", image: "/images/breakfast.jpg", alt: "سالن صبحانه هتل آوات" },
       ],
@@ -386,19 +377,16 @@ export const translations = {
       scrollHint: "Scroll to the hotel story",
       snappPayHeroBadge: hotelConfig.features.snappPay.heroDescEn,
       images: [
-        { src: "/images/hero.jpg", alt: "Avat Hotel Isfahan exterior" },
-        { src: "/images/areas/reception-1.webp", alt: "Avat Hotel reception" },
-        { src: "/images/room-double.jpg", alt: "Avat Hotel double room" },
-        { src: "/images/breakfast.jpg", alt: "Avat Hotel breakfast room" },
-        { src: "/images/courtyard.jpg", alt: "Avat Hotel common area" },
-        { src: "/images/areas/reception-2.webp", alt: "Hotel entrance and lounge" },
+        { src: "/images/avat-exterior.jpeg", alt: "Avat Hotel Isfahan exterior" },
+        { src: "/images/avat-reception.jpeg", alt: "Avat Hotel reception" },
+        { src: "/images/avat-naqsh-jahan.jpg", alt: "Naqsh-e Jahan Square, Isfahan" },
       ],
     },
     story: {
       heading: "Avat in the Heart of Isfahan",
       desc: "Avat Hotel is located on Neshat Street, east of Naqsh-e Jahan Square, offering a simple and restful base in one of Isfahan’s most visited areas.",
       scenes: [
-        { id: "location", title: "Close to Naqsh-e Jahan and Isfahan history", caption: "From Avat Hotel, Imam Mosque, Sheikh Lotfollah Mosque, Naqsh-e Jahan Square, and Ali Qapu Palace are within an easy walk.", image: "/images/hero.jpg", alt: "Avat Hotel Isfahan near Naqsh-e Jahan Square" },
+        { id: "location", title: "Close to Naqsh-e Jahan and Isfahan history", caption: "From Avat Hotel, Imam Mosque, Sheikh Lotfollah Mosque, Naqsh-e Jahan Square, and Ali Qapu Palace are within an easy walk.", image: "/images/avat-naqsh-jahan.jpg", alt: "Naqsh-e Jahan Square, Isfahan" },
         { id: "rooms", title: "Rooms for every kind of trip", caption: "Choose from a twin room for one guest to triple and quadruple rooms based on the size and style of your stay.", image: "/images/room-double.jpg", alt: "Avat Hotel Isfahan double room" },
         { id: "breakfast", title: "Daily breakfast and attentive service", caption: "24-hour reception, breakfast, room service, and essential in-room amenities make staying in Isfahan straightforward and dependable.", image: "/images/breakfast.jpg", alt: "Avat Hotel breakfast room" },
       ],

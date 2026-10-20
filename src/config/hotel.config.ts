@@ -157,7 +157,7 @@ export const hotelConfig: HotelConfig = {
       "Neshat Street hotel Isfahan",
       "One-star hotel Isfahan",
     ],
-    ogImage: "/images/hero.jpg",
+    ogImage: "/images/avat-exterior.jpeg",
   },
 
   contact: {
