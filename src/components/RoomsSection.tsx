@@ -57,6 +57,9 @@ export function RoomsSection() {
     return String(num);
   };
 
+  const formatPrice = (price: number) =>
+    new Intl.NumberFormat(language === "fa" ? "fa-IR" : "en-US").format(price);
+
   // Inline card photo switching
   const handlePrevImage = (roomId: string, total: number) => {
     setRoomImageIndexes((prev) => {
@@ -360,6 +363,13 @@ export function RoomsSection() {
                       {room.subtitle}
                     </p>
 
+                    <div className="flex items-center justify-between gap-4 border-y border-[#dfd9cc] py-3 mb-5">
+                      <span className="text-xs sm:text-sm text-[#555f6d]">{t.rooms.priceLabel}</span>
+                      <strong className="text-base sm:text-lg text-[#0494D6] font-bold whitespace-nowrap">
+                        {formatPrice(room.pricePerNight)} {t.rooms.currency}
+                      </strong>
+                    </div>
+
                     <p className="text-sm sm:text-base text-[#555f6d] mb-5 leading-relaxed font-light">
                       {room.description}
                     </p>
@@ -405,20 +415,22 @@ export function RoomsSection() {
                     </ul>
 
                     {/* Minimal Harmonious Snapp Pay Note */}
-                    <div className="mb-6 py-2 px-3.5 rounded-xl bg-[#faf8f5] border border-[#e8e4db] flex items-center justify-between gap-2 text-xs">
-                      <div className="flex items-center gap-2.5">
-                        <div className="w-6 h-4 relative flex-shrink-0">
-                          <Image src="/images/snapp-pay.png" alt="اسنپ پی" fill className="object-contain" />
+                    {hotelConfig.features.snappPay.enabled && (
+                      <div className="mb-6 py-2 px-3.5 rounded-xl bg-[#faf8f5] border border-[#e8e4db] flex items-center justify-between gap-2 text-xs">
+                        <div className="flex items-center gap-2.5">
+                          <div className="w-6 h-4 relative flex-shrink-0">
+                            <Image src="/images/snapp-pay.png" alt="اسنپ پی" fill className="object-contain" />
+                          </div>
+                          <span className="text-[#8c7b64]/30 select-none hidden sm:inline">|</span>
+                          <span className="font-medium text-[#0494D6]">
+                            {isEn ? "Pay in 4 installments with Snapp! Pay" : "امکان پرداخت در ۴ قسط با اسنپ‌پی"}
+                          </span>
                         </div>
-                        <span className="text-[#8c7b64]/30 select-none hidden sm:inline">|</span>
-                        <span className="font-medium text-[#0494D6]">
-                          {isEn ? "Pay in 4 installments with Snapp! Pay" : "امکان پرداخت در ۴ قسط با اسنپ‌پی"}
+                        <span className="text-[11px] text-[#8c7b64] font-light whitespace-nowrap">
+                          {isEn ? "0% fee · No check" : "بدون کارمزد و ضامن"}
                         </span>
                       </div>
-                      <span className="text-[11px] text-[#8c7b64] font-light whitespace-nowrap">
-                        {isEn ? "0% fee · No check" : "بدون کارمزد و ضامن"}
-                      </span>
-                    </div>
+                    )}
                   </div>
 
                   {/* Actions */}
