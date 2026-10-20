@@ -27,7 +27,7 @@ export function Footer() {
   ];
 
   return (
-    <footer className="relative bg-[#faf8f5] text-[#172554] border-t border-[#dfd9cc] pt-14 pb-10 overflow-hidden">
+    <footer className="relative bg-[#faf8f5] text-[#0494D6] border-t border-[#dfd9cc] pt-14 pb-10 overflow-hidden">
       {/* Persian Gereh-Chini Geometric Background Watermark */}
       <div className="absolute inset-0 pointer-events-none z-0 opacity-[0.035]">
         <svg className="w-full h-full" xmlns="http://www.w3.org/2000/svg">
@@ -77,7 +77,7 @@ export function Footer() {
             </div>
 
             {/* Hotel Identity */}
-            <h3 className="text-xl sm:text-2xl font-bold tracking-tight text-[#172554] mb-1 transition-colors group-hover:text-[#8c7b64]">
+            <h3 className="text-xl sm:text-2xl font-bold tracking-tight text-[#0494D6] mb-1 transition-colors group-hover:text-[#8c7b64]">
               {t.brand.name}
             </h3>
             <span className="text-xs text-[#8c7b64] font-medium tracking-wide">
@@ -100,7 +100,7 @@ export function Footer() {
             <React.Fragment key={link.href}>
               <a
                 href={link.href}
-                className="hover:text-[#172554] transition-colors whitespace-nowrap"
+                className="hover:text-[#0494D6] transition-colors whitespace-nowrap"
               >
                 {link.label}
               </a>
@@ -117,7 +117,7 @@ export function Footer() {
             <>
               <a
                 href={`tel:${isEn ? hotelConfig.contact.phone.international : hotelConfig.contact.phone.raw}`}
-                className="flex items-center gap-2 hover:text-[#172554] transition-colors font-semibold"
+                className="flex items-center gap-2 hover:text-[#0494D6] transition-colors font-semibold"
               >
                 <Phone className="w-3.5 h-3.5 text-[#8c7b64]" />
                 <span dir="ltr">{t.nav.phone}</span>
@@ -159,7 +159,7 @@ export function Footer() {
           <div className="w-full sm:w-auto mt-2 sm:mt-0 flex justify-center">
             <BookingDialog
               trigger={
-                <Button className="h-8.5 px-4 rounded-full bg-[#172554] hover:bg-[#0f172a] text-white text-xs font-semibold shadow-xs cursor-pointer">
+                <Button className="h-8.5 px-4 rounded-full bg-[#0494D6] hover:bg-[#0379ad] text-white text-xs font-semibold shadow-xs cursor-pointer">
                   {t.footer.contactBtn}
                 </Button>
               }

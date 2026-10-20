@@ -70,7 +70,7 @@ export function BookingDialog({
       <Dialog open={openState} onOpenChange={setOpen}>
         <DialogContent className={`sm:max-w-[440px] p-6 sm:p-8 bg-white rounded-[24px] border border-[#dfd9cc] shadow-xl ${isEn ? "text-left" : "text-right"}`}>
           <DialogHeader className={`pb-3 border-b border-[#dfd9cc] ${isEn ? "text-left" : "text-right"}`}>
-            <DialogTitle className="text-xl sm:text-2xl font-bold text-[#172554]">
+            <DialogTitle className="text-xl sm:text-2xl font-bold text-[#0494D6]">
               {t.booking.title}
             </DialogTitle>
             {initialRoom && initialRoom !== defaultRoomName && (
@@ -86,7 +86,7 @@ export function BookingDialog({
               <div className="w-7 h-4 relative flex-shrink-0">
                 <Image src="/images/snapp-pay.png" alt="اسنپ پی Snapp Pay" fill className="object-contain" />
               </div>
-              <span className="font-semibold text-[#172554]">
+              <span className="font-semibold text-[#0494D6]">
                 {isEn ? "Pay in 4 installments with Snapp! Pay" : "امکان پرداخت در ۴ قسط ماهانه با اسنپ‌پی"}
               </span>
             </div>
@@ -134,7 +134,7 @@ export function BookingDialog({
                     location: location || "booking_dialog",
                   });
                 }}
-                className="flex items-center justify-between p-4 rounded-[16px] bg-[#faf8f5] hover:bg-[#f3efe6] border border-[#dfd9cc] text-[#172554] transition-colors cursor-pointer"
+                className="flex items-center justify-between p-4 rounded-[16px] bg-[#faf8f5] hover:bg-[#f3efe6] border border-[#dfd9cc] text-[#0494D6] transition-colors cursor-pointer"
               >
                 <div className="flex items-center gap-3">
                   <Phone className="w-5 h-5 text-[#8c7b64]" />
@@ -155,7 +155,7 @@ export function BookingDialog({
                   location: location || "booking_dialog",
                 });
               }}
-              className="flex items-center justify-between p-4 rounded-[16px] bg-[#faf8f5] hover:bg-[#f3efe6] border border-[#dfd9cc] text-[#172554] transition-colors cursor-pointer"
+              className="flex items-center justify-between p-4 rounded-[16px] bg-[#faf8f5] hover:bg-[#f3efe6] border border-[#dfd9cc] text-[#0494D6] transition-colors cursor-pointer"
             >
               <div className="flex items-center gap-3">
                 <Phone className="w-5 h-5 text-[#8c7b64]" />

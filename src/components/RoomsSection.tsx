@@ -162,7 +162,7 @@ export function RoomsSection() {
         {/* Section Header - Editorial & Restrained */}
         <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-12 sm:mb-16 pb-8 border-b border-[#dfd9cc]">
           <div className={`max-w-2xl ${isEn ? "text-left" : "text-right"}`}>
-            <h2 className="text-[30px] sm:text-[42px] lg:text-[46px] font-bold leading-tight text-[#172554] tracking-tight mb-3">
+            <h2 className="text-[30px] sm:text-[42px] lg:text-[46px] font-bold leading-tight text-[#0494D6] tracking-tight mb-3">
               {t.rooms.heading}
             </h2>
             <p className="text-sm sm:text-base leading-relaxed text-[#555f6d] font-light">
@@ -173,7 +173,7 @@ export function RoomsSection() {
           <div className="flex-shrink-0">
             <BookingDialog
               trigger={
-                <Button className="bg-[#172554] hover:bg-[#0f172a] text-white rounded-full h-11 px-7 text-sm font-semibold shadow-sm cursor-pointer">
+                <Button className="bg-[#0494D6] hover:bg-[#0379ad] text-white rounded-full h-11 px-7 text-sm font-semibold shadow-sm cursor-pointer">
                   {t.rooms.inquireBtn}
                 </Button>
               }
@@ -193,8 +193,8 @@ export function RoomsSection() {
                 onClick={() => setFilter(cat.id)}
                 className={`h-10 px-4 sm:px-5 rounded-full text-xs sm:text-sm font-medium transition-all duration-200 cursor-pointer flex items-center gap-2 whitespace-nowrap ${
                   isActive
-                    ? "bg-[#172554] text-white shadow-xs"
-                    : "bg-[#faf8f5] hover:bg-white text-[#555f6d] hover:text-[#172554] border border-[#dfd9cc]"
+                    ? "bg-[#0494D6] text-white shadow-xs"
+                    : "bg-[#faf8f5] hover:bg-white text-[#555f6d] hover:text-[#0494D6] border border-[#dfd9cc]"
                 }`}
               >
                 <span>{cat.label}</span>
@@ -252,7 +252,7 @@ export function RoomsSection() {
                   {/* Room Category Pill */}
                   {room.categoryLabel && (
                     <div className={`absolute top-4 ${isEn ? "left-4" : "right-4"} z-20`}>
-                      <span className="text-xs font-semibold px-3 py-1 rounded-full bg-white/95 text-[#172554] backdrop-blur-md shadow-sm border border-white/60">
+                      <span className="text-xs font-semibold px-3 py-1 rounded-full bg-white/95 text-[#0494D6] backdrop-blur-md shadow-sm border border-white/60">
                         {room.categoryLabel}
                       </span>
                     </div>
@@ -351,7 +351,7 @@ export function RoomsSection() {
                 >
                   <div>
                     <div className="flex items-start justify-between gap-3 mb-2">
-                      <h3 className="text-2xl sm:text-3xl font-bold text-[#172554] leading-snug">
+                      <h3 className="text-2xl sm:text-3xl font-bold text-[#0494D6] leading-snug">
                         {room.title}
                       </h3>
                     </div>
@@ -369,7 +369,7 @@ export function RoomsSection() {
                       <button
                         type="button"
                         onClick={() => openRoomGallery(room, currentImgIdx)}
-                        className="mb-5 inline-flex items-center gap-2 text-xs font-semibold text-[#172554] hover:text-[#0f172a] bg-[#faf8f5] hover:bg-white px-3.5 py-1.5 rounded-full border border-[#dfd9cc] transition-all cursor-pointer group/btn shadow-2xs hover:shadow-xs"
+                        className="mb-5 inline-flex items-center gap-2 text-xs font-semibold text-[#0494D6] hover:text-[#0379ad] bg-[#faf8f5] hover:bg-white px-3.5 py-1.5 rounded-full border border-[#dfd9cc] transition-all cursor-pointer group/btn shadow-2xs hover:shadow-xs"
                       >
                         <Images className="w-3.5 h-3.5 text-[#8c7b64] group-hover/btn:scale-110 transition-transform" />
                         <span>
@@ -384,11 +384,11 @@ export function RoomsSection() {
                     {/* Room Specs - Editorial Line */}
                     <div className="flex flex-wrap items-center gap-x-5 gap-y-2 py-3 border-y border-[#dfd9cc] text-xs sm:text-sm text-[#555f6d] mb-5">
                       <span>
-                        {t.rooms.capacityLabel} <strong className="text-[#172554] font-semibold">{room.capacity}</strong>
+                        {t.rooms.capacityLabel} <strong className="text-[#0494D6] font-semibold">{room.capacity}</strong>
                       </span>
                       <span>·</span>
                       <span>
-                        {t.rooms.sizeLabel} <strong className="text-[#172554] font-semibold">{room.size}</strong>
+                        {t.rooms.sizeLabel} <strong className="text-[#0494D6] font-semibold">{room.size}</strong>
                       </span>
                       <span>·</span>
                       <span>{room.architectureFeature}</span>
@@ -411,7 +411,7 @@ export function RoomsSection() {
                           <Image src="/images/snapp-pay.png" alt="اسنپ پی" fill className="object-contain" />
                         </div>
                         <span className="text-[#8c7b64]/30 select-none hidden sm:inline">|</span>
-                        <span className="font-medium text-[#172554]">
+                        <span className="font-medium text-[#0494D6]">
                           {isEn ? "Pay in 4 installments with Snapp! Pay" : "امکان پرداخت در ۴ قسط با اسنپ‌پی"}
                         </span>
                       </div>
@@ -428,7 +428,7 @@ export function RoomsSection() {
                         trackEvent("booking_dialog_open", { room: room.title, location: "room_card" });
                         handleOpenBooking(room.title);
                       }}
-                      className="flex-1 bg-[#172554] hover:bg-[#0f172a] text-white rounded-full h-11 text-sm font-semibold gap-2 shadow-sm cursor-pointer"
+                      className="flex-1 bg-[#0494D6] hover:bg-[#0379ad] text-white rounded-full h-11 text-sm font-semibold gap-2 shadow-sm cursor-pointer"
                     >
                       <Phone className="w-4 h-4 text-white/80" />
                       {t.rooms.callToBook}
@@ -498,7 +498,7 @@ export function RoomsSection() {
                   closeRoomGallery();
                   handleOpenBooking(title);
                 }}
-                className="hidden sm:flex bg-[#172554] hover:bg-[#1e3a8a] text-white rounded-full h-9 px-4 text-xs font-semibold gap-1.5 shadow-sm border border-white/20 cursor-pointer"
+                className="hidden sm:flex bg-[#0494D6] hover:bg-[#0379ad] text-white rounded-full h-9 px-4 text-xs font-semibold gap-1.5 shadow-sm border border-white/20 cursor-pointer"
               >
                 <Phone className="w-3.5 h-3.5 text-white/80" />
                 <span>{isEn ? "Book This Room" : "رزرو این اتاق"}</span>

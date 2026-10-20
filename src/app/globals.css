@@ -11,25 +11,25 @@
   --font-sans: 'Estedad', system-ui, -apple-system, sans-serif;
   --font-heading: 'Estedad', system-ui, -apple-system, sans-serif;
   
-  /* Primary Navy Color */
-  --color-primary: #172554;
+  /* Avat Hotel brand blue */
+  --color-primary: #0494D6;
   --color-primary-foreground: #ffffff;
   
   --color-secondary: #f8fafc;
-  --color-secondary-foreground: #172554;
+  --color-secondary-foreground: #0494D6;
   
   --color-muted: #f1f5f9;
   --color-muted-foreground: #475569;
   
   --color-accent: #eff6ff;
-  --color-accent-foreground: #172554;
+  --color-accent-foreground: #0494D6;
   
   --color-destructive: #dc2626;
   --color-destructive-foreground: #ffffff;
   
   --color-border: #e2e8f0;
   --color-input: #cbd5e1;
-  --color-ring: #172554;
+  --color-ring: #0494D6;
   
   --radius-lg: 12px;
   --radius-md: 10px;
@@ -43,19 +43,19 @@
   --card-foreground: #0f172a;
   --popover: #ffffff;
   --popover-foreground: #0f172a;
-  --primary: #172554;
+  --primary: #0494D6;
   --primary-foreground: #ffffff;
   --secondary: #f8fafc;
-  --secondary-foreground: #172554;
+  --secondary-foreground: #0494D6;
   --muted: #f1f5f9;
   --muted-foreground: #475569;
   --accent: #eff6ff;
-  --accent-foreground: #172554;
+  --accent-foreground: #0494D6;
   --destructive: #dc2626;
   --destructive-foreground: #ffffff;
   --border: #e2e8f0;
   --input: #cbd5e1;
-  --ring: #172554;
+  --ring: #0494D6;
   --radius: 12px;
 
   /* Emil Kowalski custom animation curves */

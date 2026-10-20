@@ -41,7 +41,7 @@ export function ArchitecturePhilosophy() {
     <section
       ref={sectionRef}
       id="story"
-      className="relative py-24 md:py-36 bg-[#faf8f5] text-[#172554] border-b border-[#e8e4db] overflow-hidden"
+      className="relative py-24 md:py-36 bg-[#faf8f5] text-[#0494D6] border-b border-[#e8e4db] overflow-hidden"
     >
       {/* Persian Geometric Gereh-Chini Vector Pattern */}
       <div
@@ -51,7 +51,7 @@ export function ArchitecturePhilosophy() {
         }}
       >
         <svg
-          className="absolute inset-0 w-full h-[140%] opacity-[0.04] text-[#172554]"
+          className="absolute inset-0 w-full h-[140%] opacity-[0.04] text-[#0494D6]"
           xmlns="http://www.w3.org/2000/svg"
           width="100%"
           height="100%"
@@ -80,7 +80,7 @@ export function ArchitecturePhilosophy() {
       <div className="max-w-6xl mx-auto px-4 sm:px-6 relative z-10">
         {/* Section Heading - Dignified & Natural */}
         <div className={`max-w-2xl mb-20 sm:mb-28 ${isEn ? "text-left" : "text-right"}`}>
-          <h2 className="text-[32px] sm:text-[44px] lg:text-[48px] font-bold leading-[44px] sm:leading-[58px] tracking-tight text-[#172554] mb-4">
+          <h2 className="text-[32px] sm:text-[44px] lg:text-[48px] font-bold leading-[44px] sm:leading-[58px] tracking-tight text-[#0494D6] mb-4">
             {t.story.heading}
           </h2>
           <p className="text-base sm:text-lg text-[#555f6d] leading-relaxed font-light">
@@ -128,7 +128,7 @@ export function ArchitecturePhilosophy() {
                     isEn ? "text-left" : "text-right"
                   } ${isEven ? "lg:order-2" : "lg:order-1"}`}
                 >
-                  <h3 className="text-2xl sm:text-3xl font-bold text-[#172554] tracking-tight leading-snug">
+                  <h3 className="text-2xl sm:text-3xl font-bold text-[#0494D6] tracking-tight leading-snug">
                     {scene.title}
                   </h3>
 

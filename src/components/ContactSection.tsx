@@ -17,7 +17,7 @@ export function ContactSection() {
       <div className="max-w-5xl mx-auto px-4 sm:px-6">
         {/* Section Heading - Dignified & Restrained */}
         <div className={`max-w-2xl mb-16 md:mb-20 ${isEn ? "text-left" : "text-right"}`}>
-          <h2 className="text-[32px] sm:text-[44px] lg:text-[48px] font-bold leading-tight text-[#172554] tracking-tight mb-4">
+          <h2 className="text-[32px] sm:text-[44px] lg:text-[48px] font-bold leading-tight text-[#0494D6] tracking-tight mb-4">
             {t.contact.heading}
           </h2>
           <p className="text-base sm:text-lg leading-relaxed text-[#555f6d] font-light">
@@ -29,7 +29,7 @@ export function ContactSection() {
         <div className={`grid grid-cols-1 md:grid-cols-2 gap-10 lg:gap-14 ${isEn ? "text-left" : "text-right"}`}>
           {/* Direct Lines */}
           <div className="space-y-6">
-            <h3 className="text-xl font-bold text-[#172554] pb-3 border-b border-[#dfd9cc]">
+            <h3 className="text-xl font-bold text-[#0494D6] pb-3 border-b border-[#dfd9cc]">
               {t.contact.phoneHeading}
             </h3>
 
@@ -39,7 +39,7 @@ export function ContactSection() {
                 <span className="block text-xs text-[#8c7b64] font-medium mb-1">{t.contact.landlineLabel}</span>
                 <a
                   href={`tel:${isEn ? hotelConfig.contact.phone.international : hotelConfig.contact.phone.raw}`}
-                  className="text-2xl sm:text-3xl font-bold text-[#172554] hover:text-[#0f172a] transition-colors inline-block"
+                  className="text-2xl sm:text-3xl font-bold text-[#0494D6] hover:text-[#0379ad] transition-colors inline-block"
                   dir="ltr"
                 >
                   {t.nav.phone}
@@ -57,7 +57,7 @@ export function ContactSection() {
               <span className="block text-xs text-[#8c7b64] font-medium mb-1">{t.contact.mobileLabel}</span>
               <a
                 href={`tel:${isEn ? hotelConfig.contact.mobile.international : hotelConfig.contact.mobile.raw}`}
-                className="text-2xl sm:text-3xl font-bold text-[#172554] hover:text-[#0f172a] transition-colors inline-block"
+                className="text-2xl sm:text-3xl font-bold text-[#0494D6] hover:text-[#0379ad] transition-colors inline-block"
                 dir="ltr"
               >
                 {t.nav.mobile}
@@ -94,29 +94,29 @@ export function ContactSection() {
 
           {/* Practical Stay Information */}
           <div className="space-y-6">
-            <h3 className="text-xl font-bold text-[#172554] pb-3 border-b border-[#dfd9cc]">
+            <h3 className="text-xl font-bold text-[#0494D6] pb-3 border-b border-[#dfd9cc]">
               {t.contact.stayInfoHeading}
             </h3>
 
             <div className="space-y-4 text-sm leading-7 text-[#555f6d] font-light">
               <div>
-                <strong className="block text-sm font-semibold text-[#172554] mb-0.5">{t.contact.addressTitle}</strong>
+                <strong className="block text-sm font-semibold text-[#0494D6] mb-0.5">{t.contact.addressTitle}</strong>
                 <p>{t.contact.addressDesc}</p>
               </div>
 
               <div className="pt-2 border-t border-[#dfd9cc]">
-                <strong className="block text-sm font-semibold text-[#172554] mb-0.5">{t.contact.checkInOutTitle}</strong>
+                <strong className="block text-sm font-semibold text-[#0494D6] mb-0.5">{t.contact.checkInOutTitle}</strong>
                 <p>{t.contact.checkInOutDesc}</p>
               </div>
 
               <div className="pt-2 border-t border-[#dfd9cc]">
-                <strong className="block text-sm font-semibold text-[#172554] mb-0.5">{t.contact.buyoutTitle}</strong>
+                <strong className="block text-sm font-semibold text-[#0494D6] mb-0.5">{t.contact.buyoutTitle}</strong>
                 <p>{t.contact.buyoutDesc}</p>
               </div>
 
               <div className="pt-2 border-t border-[#dfd9cc]">
-                <strong className="block text-sm font-semibold text-[#172554] mb-0.5">{t.contact.emailTitle}</strong>
-                <p dir="ltr" className={`text-[#172554] ${isEn ? "text-left" : "text-right"}`}>
+                <strong className="block text-sm font-semibold text-[#0494D6] mb-0.5">{t.contact.emailTitle}</strong>
+                <p dir="ltr" className={`text-[#0494D6] ${isEn ? "text-left" : "text-right"}`}>
                   {hotelConfig.contact.social.email ?? hotelConfig.contact.social.instagramHandle}
                 </p>
               </div>

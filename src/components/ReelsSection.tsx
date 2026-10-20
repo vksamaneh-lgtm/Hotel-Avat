@@ -80,7 +80,7 @@ export function ReelsSection() {
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6">
         {/* Header row with Instagram channel link */}
         <div className="flex items-center justify-between mb-4 px-1">
-          <span className="text-xs sm:text-sm font-bold text-[#172554] tracking-tight">
+          <span className="text-xs sm:text-sm font-bold text-[#0494D6] tracking-tight">
             {isEn ? "Avat Hotel Video Stories" : "ویدیوهای هتل آوات"}
           </span>
 
@@ -88,7 +88,7 @@ export function ReelsSection() {
             href={hotelConfig.contact.social.instagramUrl}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-white/95 hover:bg-white text-[#172554] hover:text-[#E1306C] border border-[#dfd9cc] text-xs font-semibold shadow-2xs transition-all hover:scale-105 cursor-pointer"
+            className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-white/95 hover:bg-white text-[#0494D6] hover:text-[#E1306C] border border-[#dfd9cc] text-xs font-semibold shadow-2xs transition-all hover:scale-105 cursor-pointer"
           >
             <InstagramIcon className="w-3.5 h-3.5 text-[#E1306C]" />
             <span dir="ltr">{hotelConfig.contact.social.instagramHandle}</span>
@@ -99,7 +99,7 @@ export function ReelsSection() {
         <button
           onClick={() => scrollCarousel(isEn ? "left" : "right")}
           aria-label={t.reels.prev}
-          className="hidden md:flex absolute -right-3 top-1/2 -translate-y-1/2 z-20 w-11 h-11 rounded-full bg-white/95 hover:bg-white text-[#172554] backdrop-blur-md border border-[#dfd9cc] items-center justify-center transition-all duration-200 hover:scale-110 shadow-lg hover:shadow-xl cursor-pointer"
+          className="hidden md:flex absolute -right-3 top-1/2 -translate-y-1/2 z-20 w-11 h-11 rounded-full bg-white/95 hover:bg-white text-[#0494D6] backdrop-blur-md border border-[#dfd9cc] items-center justify-center transition-all duration-200 hover:scale-110 shadow-lg hover:shadow-xl cursor-pointer"
         >
           <ChevronRight className="w-6 h-6" />
         </button>
@@ -107,7 +107,7 @@ export function ReelsSection() {
         <button
           onClick={() => scrollCarousel(isEn ? "right" : "left")}
           aria-label={t.reels.next}
-          className="hidden md:flex absolute -left-3 top-1/2 -translate-y-1/2 z-20 w-11 h-11 rounded-full bg-white/95 hover:bg-white text-[#172554] backdrop-blur-md border border-[#dfd9cc] items-center justify-center transition-all duration-200 hover:scale-110 shadow-lg hover:shadow-xl cursor-pointer"
+          className="hidden md:flex absolute -left-3 top-1/2 -translate-y-1/2 z-20 w-11 h-11 rounded-full bg-white/95 hover:bg-white text-[#0494D6] backdrop-blur-md border border-[#dfd9cc] items-center justify-center transition-all duration-200 hover:scale-110 shadow-lg hover:shadow-xl cursor-pointer"
         >
           <ChevronLeft className="w-6 h-6" />
         </button>
@@ -121,7 +121,7 @@ export function ReelsSection() {
             <div
               key={story.id}
               onClick={() => setActiveStoryIndex(index)}
-              className="group relative flex-shrink-0 w-[240px] sm:w-[270px] lg:w-[290px] aspect-[9/16] rounded-[24px] overflow-hidden bg-[#172554] border border-[#dfd9cc]/70 hover:border-[#8c7b64] shadow-lg hover:shadow-2xl cursor-pointer transition-all duration-300 hover:-translate-y-1.5 snap-start"
+              className="group relative flex-shrink-0 w-[240px] sm:w-[270px] lg:w-[290px] aspect-[9/16] rounded-[24px] overflow-hidden bg-[#0494D6] border border-[#dfd9cc]/70 hover:border-[#8c7b64] shadow-lg hover:shadow-2xl cursor-pointer transition-all duration-300 hover:-translate-y-1.5 snap-start"
             >
               {/* Poster Image */}
               <Image
@@ -137,7 +137,7 @@ export function ReelsSection() {
 
               {/* Center Play Button Indicator */}
               <div className="absolute inset-0 flex items-center justify-center pointer-events-none z-10">
-                <div className="w-13 h-13 sm:w-14 sm:h-14 rounded-full bg-black/40 backdrop-blur-md border border-white/40 text-white flex items-center justify-center shadow-xl transition-all duration-300 group-hover:scale-110 group-hover:bg-[#172554]/90 group-hover:border-white">
+                <div className="w-13 h-13 sm:w-14 sm:h-14 rounded-full bg-black/40 backdrop-blur-md border border-white/40 text-white flex items-center justify-center shadow-xl transition-all duration-300 group-hover:scale-110 group-hover:bg-[#0494D6]/90 group-hover:border-white">
                   <Play className="w-6 h-6 text-white fill-white translate-x-0.5" />
                 </div>
               </div>

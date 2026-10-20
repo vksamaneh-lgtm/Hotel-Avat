@@ -42,7 +42,7 @@ export function FloatingCTA() {
       <BookingDialog
         location="floating_cta"
         trigger={
-          <button className="h-11 px-4 sm:px-5 rounded-full bg-[#172554] hover:bg-[#0f172a] text-white font-medium text-xs sm:text-sm flex items-center gap-2 shadow-xl transition-all cursor-pointer border border-white/10 hover:scale-105">
+          <button className="h-11 px-4 sm:px-5 rounded-full bg-[#0494D6] hover:bg-[#0379ad] text-white font-medium text-xs sm:text-sm flex items-center gap-2 shadow-xl transition-all cursor-pointer border border-white/10 hover:scale-105">
             <Phone className="w-4 h-4 text-white/80" />
             <span>{t.floatingCTA.receptionBtn}</span>
             {hotelConfig.features.snappPay.enabled && (

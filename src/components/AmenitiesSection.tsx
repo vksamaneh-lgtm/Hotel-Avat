@@ -65,7 +65,7 @@ export function AmenitiesSection() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className={`flex flex-col md:flex-row md:items-end justify-between gap-6 mb-10 sm:mb-12 ${isEn ? "text-left" : "text-right"}`}>
           <div className="max-w-2xl">
-            <h2 className="text-[30px] sm:text-[40px] font-bold text-[#172554] tracking-tight leading-tight mb-3">
+            <h2 className="text-[30px] sm:text-[40px] font-bold text-[#0494D6] tracking-tight leading-tight mb-3">
               {t.amenities.heading}
             </h2>
             <p className="text-sm sm:text-base text-[#555f6d] leading-relaxed font-light">
@@ -85,7 +85,7 @@ export function AmenitiesSection() {
               <button
                 type="button"
                 onClick={() => scrollCarousel(isEn ? "left" : "right")}
-                className="w-10 h-10 rounded-full bg-white border border-[#dfd9cc] text-[#172554] flex items-center justify-center shadow-2xs hover:bg-[#faf8f5] active:scale-95 transition-all cursor-pointer hover:border-[#172554]"
+                className="w-10 h-10 rounded-full bg-white border border-[#dfd9cc] text-[#0494D6] flex items-center justify-center shadow-2xs hover:bg-[#faf8f5] active:scale-95 transition-all cursor-pointer hover:border-[#0494D6]"
                 aria-label={isEn ? "Previous service" : "خدمت قبلی"}
               >
                 <ChevronRight className="w-5 h-5" />
@@ -93,7 +93,7 @@ export function AmenitiesSection() {
               <button
                 type="button"
                 onClick={() => scrollCarousel(isEn ? "right" : "left")}
-                className="w-10 h-10 rounded-full bg-white border border-[#dfd9cc] text-[#172554] flex items-center justify-center shadow-2xs hover:bg-[#faf8f5] active:scale-95 transition-all cursor-pointer hover:border-[#172554]"
+                className="w-10 h-10 rounded-full bg-white border border-[#dfd9cc] text-[#0494D6] flex items-center justify-center shadow-2xs hover:bg-[#faf8f5] active:scale-95 transition-all cursor-pointer hover:border-[#0494D6]"
                 aria-label={isEn ? "Next service" : "خدمت بعدی"}
               >
                 <ChevronLeft className="w-5 h-5" />
@@ -120,7 +120,7 @@ export function AmenitiesSection() {
                 <div>
                   {/* Top Bar: Icon Badge & Detail Tag */}
                   <div className="flex items-center justify-between gap-3 mb-5">
-                    <div className="w-12 h-12 rounded-2xl bg-[#faf8f5] border border-[#dfd9cc] text-[#172554] flex items-center justify-center transition-all duration-300 group-hover:bg-[#172554] group-hover:text-white group-hover:border-[#172554] group-hover:scale-105 shadow-2xs">
+                    <div className="w-12 h-12 rounded-2xl bg-[#faf8f5] border border-[#dfd9cc] text-[#0494D6] flex items-center justify-center transition-all duration-300 group-hover:bg-[#0494D6] group-hover:text-white group-hover:border-[#0494D6] group-hover:scale-105 shadow-2xs">
                       <Icon className="w-5 h-5 text-[#c59b27] group-hover:text-white transition-colors" />
                     </div>
 
@@ -130,7 +130,7 @@ export function AmenitiesSection() {
                   </div>
 
                   {/* Title & Description */}
-                  <h3 className="text-lg sm:text-xl font-bold text-[#172554] mb-2.5 transition-colors group-hover:text-[#8c7b64]">
+                  <h3 className="text-lg sm:text-xl font-bold text-[#0494D6] mb-2.5 transition-colors group-hover:text-[#8c7b64]">
                     {item.title}
                   </h3>
                   <p className="text-xs sm:text-sm leading-7 text-[#555f6d] font-light">
@@ -165,7 +165,7 @@ export function AmenitiesSection() {
               }}
               className={`h-1.5 rounded-full transition-all duration-300 cursor-pointer ${
                 activeIndex === idx
-                  ? "w-7 bg-[#172554]"
+                  ? "w-7 bg-[#0494D6]"
                   : "w-2 bg-[#dfd9cc] hover:bg-[#8c7b64]"
               }`}
               aria-label={`اسلاید ${idx + 1}`}

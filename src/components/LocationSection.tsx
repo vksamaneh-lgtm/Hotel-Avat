@@ -40,7 +40,7 @@ export function LocationSection() {
         {/* Section Header */}
         <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-10 sm:mb-12">
           <div className={`max-w-2xl ${isEn ? "text-left" : "text-right"}`}>
-            <h2 className="text-[30px] sm:text-[40px] lg:text-[44px] font-bold leading-tight text-[#172554] tracking-tight mb-3">
+            <h2 className="text-[30px] sm:text-[40px] lg:text-[44px] font-bold leading-tight text-[#0494D6] tracking-tight mb-3">
               {t.location.heading}
             </h2>
             <p className="text-sm sm:text-base text-[#555f6d] leading-relaxed font-light">
@@ -54,7 +54,7 @@ export function LocationSection() {
               href={`https://maps.google.com/?q=${hotelConfig.location.coordinates[0]},${hotelConfig.location.coordinates[1]}`}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-1.5 px-3.5 py-2 rounded-full border border-[#dfd9cc] bg-white hover:bg-[#faf8f5] text-xs font-semibold text-[#172554] shadow-2xs transition-all hover:scale-105"
+              className="inline-flex items-center gap-1.5 px-3.5 py-2 rounded-full border border-[#dfd9cc] bg-white hover:bg-[#faf8f5] text-xs font-semibold text-[#0494D6] shadow-2xs transition-all hover:scale-105"
             >
               <Navigation className="w-3.5 h-3.5 text-[#c59b27]" />
               <span>{t.location.googleMaps}</span>
@@ -63,7 +63,7 @@ export function LocationSection() {
               href={`https://neshan.org/maps/@${hotelConfig.location.coordinates[0]},${hotelConfig.location.coordinates[1]},${hotelConfig.location.mapZoom}z`}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-1.5 px-3.5 py-2 rounded-full border border-[#dfd9cc] bg-white hover:bg-[#faf8f5] text-xs font-semibold text-[#172554] shadow-2xs transition-all hover:scale-105"
+              className="inline-flex items-center gap-1.5 px-3.5 py-2 rounded-full border border-[#dfd9cc] bg-white hover:bg-[#faf8f5] text-xs font-semibold text-[#0494D6] shadow-2xs transition-all hover:scale-105"
             >
               <ExternalLink className="w-3.5 h-3.5 text-[#8c7b64]" />
               <span>{t.location.neshan}</span>
@@ -72,7 +72,7 @@ export function LocationSection() {
               href={`https://balad.ir/location?latitude=${hotelConfig.location.coordinates[0]}&longitude=${hotelConfig.location.coordinates[1]}`}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-1.5 px-3.5 py-2 rounded-full border border-[#dfd9cc] bg-white hover:bg-[#faf8f5] text-xs font-semibold text-[#172554] shadow-2xs transition-all hover:scale-105"
+              className="inline-flex items-center gap-1.5 px-3.5 py-2 rounded-full border border-[#dfd9cc] bg-white hover:bg-[#faf8f5] text-xs font-semibold text-[#0494D6] shadow-2xs transition-all hover:scale-105"
             >
               <ExternalLink className="w-3.5 h-3.5 text-[#8c7b64]" />
               <span>{t.location.balad}</span>
@@ -95,7 +95,7 @@ export function LocationSection() {
             <button
               type="button"
               onClick={() => setIsExpanded(true)}
-              className={`hidden lg:flex absolute top-5 z-[400] items-center gap-2.5 px-4 py-2.5 rounded-full bg-white/95 backdrop-blur-md border border-[#dfd9cc] text-[#172554] shadow-xl hover:scale-105 transition-all cursor-pointer font-bold text-xs animate-in fade-in duration-200 ${
+              className={`hidden lg:flex absolute top-5 z-[400] items-center gap-2.5 px-4 py-2.5 rounded-full bg-white/95 backdrop-blur-md border border-[#dfd9cc] text-[#0494D6] shadow-xl hover:scale-105 transition-all cursor-pointer font-bold text-xs animate-in fade-in duration-200 ${
                 isEn ? "left-5" : "right-5"
               }`}
             >
@@ -120,7 +120,7 @@ export function LocationSection() {
                 <div className="flex items-center justify-between pb-3 border-b border-[#dfd9cc]">
                   <div className="flex items-center gap-2">
                     <span className="w-2.5 h-2.5 rounded-full bg-[#c59b27] animate-ping" />
-                    <span className="text-xs font-bold text-[#172554]">
+                    <span className="text-xs font-bold text-[#0494D6]">
                       {t.location.attractionsHeading}
                     </span>
                   </div>
@@ -129,7 +129,7 @@ export function LocationSection() {
                     {activeAttractionIndex !== null && (
                       <button
                         onClick={() => setActiveAttractionIndex(null)}
-                        className="inline-flex items-center gap-1 text-[11px] text-[#8c7b64] hover:text-[#172554] font-medium transition-colors cursor-pointer"
+                        className="inline-flex items-center gap-1 text-[11px] text-[#8c7b64] hover:text-[#0494D6] font-medium transition-colors cursor-pointer"
                         title={t.location.resetView}
                       >
                         <RotateCcw className="w-3 h-3" />
@@ -141,7 +141,7 @@ export function LocationSection() {
                     <button
                       type="button"
                       onClick={() => setIsExpanded(false)}
-                      className="inline-flex items-center gap-1 text-[11px] font-semibold text-[#8c7b64] hover:text-[#172554] px-2 py-1 rounded-lg hover:bg-slate-100 transition-colors cursor-pointer"
+                      className="inline-flex items-center gap-1 text-[11px] font-semibold text-[#8c7b64] hover:text-[#0494D6] px-2 py-1 rounded-lg hover:bg-slate-100 transition-colors cursor-pointer"
                       title={t.location.collapseBtn}
                     >
                       <ChevronUp className="w-3.5 h-3.5" />
@@ -172,8 +172,8 @@ export function LocationSection() {
                       }
                       className={`group w-full text-right p-3 rounded-[16px] border transition-all duration-200 cursor-pointer flex items-center justify-between gap-2.5 ${
                         isActive
-                          ? "bg-[#172554] border-[#172554] text-white shadow-md scale-[1.02]"
-                          : "bg-white/80 hover:bg-[#faf8f5] border-[#dfd9cc] text-[#172554] hover:border-[#c59b27]/60"
+                          ? "bg-[#0494D6] border-[#0494D6] text-white shadow-md scale-[1.02]"
+                          : "bg-white/80 hover:bg-[#faf8f5] border-[#dfd9cc] text-[#0494D6] hover:border-[#c59b27]/60"
                       }`}
                     >
                       <div className="flex items-center gap-2.5 min-w-0">
@@ -181,7 +181,7 @@ export function LocationSection() {
                         <div className={`min-w-0 ${isEn ? "text-left" : "text-right"}`}>
                           <span
                             className={`block text-xs sm:text-[13px] font-bold truncate ${
-                              isActive ? "text-white" : "text-[#172554]"
+                              isActive ? "text-white" : "text-[#0494D6]"
                             }`}
                           >
                             {name}
@@ -201,7 +201,7 @@ export function LocationSection() {
                           className={`text-[11px] font-bold px-2 py-0.5 rounded-full whitespace-nowrap ${
                             isActive
                               ? "bg-[#c59b27] text-white"
-                              : "bg-[#faf8f5] text-[#172554] border border-[#dfd9cc]"
+                              : "bg-[#faf8f5] text-[#0494D6] border border-[#dfd9cc]"
                           }`}
                         >
                           {dist}
@@ -210,7 +210,7 @@ export function LocationSection() {
                           className={`w-4 h-4 transition-transform ${
                             isActive
                               ? "text-[#c59b27] translate-x-0.5 -translate-y-0.5 scale-110"
-                              : "text-[#8c7b64]/50 group-hover:text-[#172554]"
+                              : "text-[#8c7b64]/50 group-hover:text-[#0494D6]"
                           }`}
                         />
                       </div>
@@ -224,7 +224,7 @@ export function LocationSection() {
                 <div className="flex items-start gap-2">
                   <MapPin className="w-4 h-4 text-[#c59b27] flex-shrink-0 mt-0.5" />
                   <div className={`text-[11px] ${isEn ? "text-left" : "text-right"}`}>
-                    <strong className="block font-bold text-[#172554] mb-0.5">
+                    <strong className="block font-bold text-[#0494D6] mb-0.5">
                       {t.location.addressLabel}
                     </strong>
                     <p className="text-[#555f6d] leading-normal font-light line-clamp-2">
@@ -248,7 +248,7 @@ export function LocationSection() {
           >
             <div className="flex items-center gap-2">
               <span className="w-2 h-2 rounded-full bg-[#c59b27]" />
-              <span className="text-xs sm:text-sm font-bold text-[#172554]">
+              <span className="text-xs sm:text-sm font-bold text-[#0494D6]">
                 {t.location.attractionsHeading}
               </span>
               <span className="text-[10px] px-2 py-0.5 rounded-full bg-[#faf8f5] border border-[#dfd9cc] text-[#8c7b64]">
@@ -288,8 +288,8 @@ export function LocationSection() {
                       }
                       className={`p-3 rounded-[16px] border transition-all text-right flex items-center justify-between gap-2 cursor-pointer ${
                         isActive
-                          ? "bg-[#172554] border-[#172554] text-white shadow-md"
-                          : "bg-white border-[#dfd9cc] text-[#172554]"
+                          ? "bg-[#0494D6] border-[#0494D6] text-white shadow-md"
+                          : "bg-white border-[#dfd9cc] text-[#0494D6]"
                       }`}
                     >
                       <div className="flex items-center gap-2.5 min-w-0">
@@ -311,7 +311,7 @@ export function LocationSection() {
                         className={`text-[10px] font-bold px-2 py-0.5 rounded-full whitespace-nowrap ${
                           isActive
                             ? "bg-[#c59b27] text-white"
-                            : "bg-[#faf8f5] text-[#172554] border border-[#dfd9cc]"
+                            : "bg-[#faf8f5] text-[#0494D6] border border-[#dfd9cc]"
                         }`}
                       >
                         {dist}
@@ -324,7 +324,7 @@ export function LocationSection() {
               {activeAttractionIndex !== null && (
                 <button
                   onClick={() => setActiveAttractionIndex(null)}
-                  className="mt-1 py-2 rounded-full border border-[#dfd9cc] bg-white text-xs font-semibold text-[#172554] flex items-center justify-center gap-1.5 cursor-pointer shadow-2xs"
+                  className="mt-1 py-2 rounded-full border border-[#dfd9cc] bg-white text-xs font-semibold text-[#0494D6] flex items-center justify-center gap-1.5 cursor-pointer shadow-2xs"
                 >
                   <RotateCcw className="w-3.5 h-3.5 text-[#8c7b64]" />
                   <span>{t.location.resetView}</span>

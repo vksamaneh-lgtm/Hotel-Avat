@@ -167,7 +167,7 @@ export function GallerySection() {
         {/* Editorial Section Header - Dignified & Restrained */}
         <div className={`flex flex-col md:flex-row md:items-end justify-between gap-6 mb-12 sm:mb-14 ${isEn ? "text-left" : "text-right"}`}>
           <div className="max-w-2xl">
-            <h2 className="text-[30px] sm:text-[42px] font-bold text-[#172554] tracking-tight leading-tight mb-3">
+            <h2 className="text-[30px] sm:text-[42px] font-bold text-[#0494D6] tracking-tight leading-tight mb-3">
               {t.gallery.heading}
             </h2>
             <p className="text-sm sm:text-base text-[#555f6d] leading-relaxed font-light">
@@ -192,10 +192,10 @@ export function GallerySection() {
                   aria-selected={isActive}
                   aria-controls="gallery-grid"
                   onClick={() => setFilter(tab.id)}
-                  className={`h-9 px-3.5 sm:px-4 rounded-full text-xs font-medium transition-all duration-200 cursor-pointer flex items-center gap-1.5 whitespace-nowrap focus-visible:outline-2 focus-visible:outline-[#172554] ${
+                  className={`h-9 px-3.5 sm:px-4 rounded-full text-xs font-medium transition-all duration-200 cursor-pointer flex items-center gap-1.5 whitespace-nowrap focus-visible:outline-2 focus-visible:outline-[#0494D6] ${
                     isActive
-                      ? "bg-[#172554] text-white shadow-xs"
-                      : "bg-white/80 hover:bg-white text-[#555f6d] hover:text-[#172554] border border-[#dfd9cc]"
+                      ? "bg-[#0494D6] text-white shadow-xs"
+                      : "bg-white/80 hover:bg-white text-[#555f6d] hover:text-[#0494D6] border border-[#dfd9cc]"
                   }`}
                 >
                   <span>{tab.label}</span>
@@ -270,7 +270,7 @@ export function GallerySection() {
               <button
                 type="button"
                 onClick={() => scrollMobileCarousel("left")}
-                className="w-9 h-9 rounded-full bg-white border border-[#dfd9cc] text-[#172554] flex items-center justify-center shadow-2xs hover:bg-[#faf8f5] active:scale-95 transition-all cursor-pointer"
+                className="w-9 h-9 rounded-full bg-white border border-[#dfd9cc] text-[#0494D6] flex items-center justify-center shadow-2xs hover:bg-[#faf8f5] active:scale-95 transition-all cursor-pointer"
                 aria-label={isEn ? "Previous image" : "تصویر قبلی"}
                 title={isEn ? "Previous image" : "تصویر قبلی"}
               >
@@ -279,7 +279,7 @@ export function GallerySection() {
               <button
                 type="button"
                 onClick={() => scrollMobileCarousel("right")}
-                className="w-9 h-9 rounded-full bg-white border border-[#dfd9cc] text-[#172554] flex items-center justify-center shadow-2xs hover:bg-[#faf8f5] active:scale-95 transition-all cursor-pointer"
+                className="w-9 h-9 rounded-full bg-white border border-[#dfd9cc] text-[#0494D6] flex items-center justify-center shadow-2xs hover:bg-[#faf8f5] active:scale-95 transition-all cursor-pointer"
                 aria-label={isEn ? "Next image" : "تصویر بعدی"}
                 title={isEn ? "Next image" : "تصویر بعدی"}
               >
@@ -302,7 +302,7 @@ export function GallerySection() {
               type="button"
               onClick={() => openLightbox(idx)}
               aria-label={item.title}
-              className={`group relative rounded-[18px] sm:rounded-[22px] overflow-hidden border border-[#dfd9cc] bg-[#f0ece1]/50 shadow-xs hover:shadow-xl transition-all duration-300 cursor-pointer focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#172554] col-span-1 aspect-[4/3] ${
+              className={`group relative rounded-[18px] sm:rounded-[22px] overflow-hidden border border-[#dfd9cc] bg-[#f0ece1]/50 shadow-xs hover:shadow-xl transition-all duration-300 cursor-pointer focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#0494D6] col-span-1 aspect-[4/3] ${
                 isEn ? "text-left" : "text-right"
               }`}
             >

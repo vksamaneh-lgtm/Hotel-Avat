@@ -74,7 +74,7 @@ export function Hero() {
         {/* Minimal Quiet Action */}
         <BookingDialog
           trigger={
-            <Button className="h-11 px-8 rounded-full bg-white/95 hover:bg-white text-[#172554] text-sm font-semibold shadow-xl backdrop-blur-md transition-all hover:scale-105 cursor-pointer">
+            <Button className="h-11 px-8 rounded-full bg-white/95 hover:bg-white text-[#0494D6] text-sm font-semibold shadow-xl backdrop-blur-md transition-all hover:scale-105 cursor-pointer">
               {t.hero.reserveBtn}
             </Button>
           }

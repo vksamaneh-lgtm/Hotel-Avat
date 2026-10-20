@@ -53,7 +53,7 @@ export function Navbar() {
       href: "#reels",
       label: t.nav.reels,
       badge: isEn ? "Videos" : "ویدیوها",
-      badgeColor: "bg-[#172554]/10 text-[#172554]",
+      badgeColor: "bg-[#0494D6]/10 text-[#0494D6]",
       icon: Film,
     },
     { href: "#story", label: t.nav.story },
@@ -73,7 +73,7 @@ export function Navbar() {
     <>
       {/* Top Notice Bar - Hidden on small mobile screens to preserve viewport height */}
       <aside
-        className={`hidden sm:block bg-[#172554] text-white/80 text-xs py-2 transition-all duration-300 ${
+        className={`hidden sm:block bg-[#0494D6] text-white/80 text-xs py-2 transition-all duration-300 ${
           scrolled ? "max-h-0 opacity-0 overflow-hidden py-0" : "max-h-12 opacity-100"
         }`}
       >
@@ -108,7 +108,7 @@ export function Navbar() {
       <header
         className={`absolute sm:fixed z-50 transition-all duration-300 ease-out inset-x-0 w-full bg-white/95 backdrop-blur-md border-b border-[#dfd9cc] px-4 py-2.5 pt-[max(0.625rem,env(safe-area-inset-top))] top-0 ${
           scrolled
-            ? "sm:top-4 sm:mx-auto sm:w-[calc(100%-2rem)] lg:w-max max-w-[96vw] sm:backdrop-blur-xl sm:shadow-[0_10px_35px_-5px_rgba(23,37,84,0.12)] sm:border sm:rounded-full sm:px-5 lg:px-6 sm:py-2.5 sm:border-b-transparent"
+            ? "sm:top-4 sm:mx-auto sm:w-[calc(100%-2rem)] lg:w-max max-w-[96vw] sm:backdrop-blur-xl sm:shadow-[0_10px_35px_-5px_rgba(4,148,214,0.12)] sm:border sm:rounded-full sm:px-5 lg:px-6 sm:py-2.5 sm:border-b-transparent"
             : "sm:top-8 sm:bg-white/90 sm:px-8 sm:py-3.5"
         }`}
       >
@@ -134,7 +134,7 @@ export function Navbar() {
             </div>
             <div className={`flex flex-col whitespace-nowrap ${isEn ? "text-left" : "text-right"}`}>
               <span
-                className={`font-bold tracking-tight text-[#172554] transition-all whitespace-nowrap ${
+                className={`font-bold tracking-tight text-[#0494D6] transition-all whitespace-nowrap ${
                   scrolled ? "text-sm sm:text-base" : "text-sm sm:text-xl font-black"
                 }`}
               >
@@ -154,7 +154,7 @@ export function Navbar() {
               <a
                 key={link.href}
                 href={link.href}
-                className="text-xs xl:text-sm font-medium text-[#172554] hover:text-[#8c7b64] transition-colors whitespace-nowrap py-1"
+                className="text-xs xl:text-sm font-medium text-[#0494D6] hover:text-[#8c7b64] transition-colors whitespace-nowrap py-1"
               >
                 {link.label}
               </a>
@@ -167,7 +167,7 @@ export function Navbar() {
             <button
               type="button"
               onClick={toggleLanguage}
-              className="h-8 sm:h-9 px-2.5 sm:px-3 rounded-full border border-[#dfd9cc] bg-white hover:bg-[#faf8f5] text-[#172554] text-xs font-semibold flex items-center gap-1.5 transition-colors cursor-pointer shadow-2xs whitespace-nowrap flex-shrink-0"
+              className="h-8 sm:h-9 px-2.5 sm:px-3 rounded-full border border-[#dfd9cc] bg-white hover:bg-[#faf8f5] text-[#0494D6] text-xs font-semibold flex items-center gap-1.5 transition-colors cursor-pointer shadow-2xs whitespace-nowrap flex-shrink-0"
               title={isEn ? "تغییر زبان به فارسی" : "Switch language to English"}
               aria-label="Language switcher"
             >
@@ -180,7 +180,7 @@ export function Navbar() {
               <BookingDialog
                 trigger={
                   <Button
-                    className={`bg-[#172554] hover:bg-[#0f172a] text-white font-medium transition-all shadow-sm cursor-pointer whitespace-nowrap flex-shrink-0 ${
+                    className={`bg-[#0494D6] hover:bg-[#0379ad] text-white font-medium transition-all shadow-sm cursor-pointer whitespace-nowrap flex-shrink-0 ${
                       scrolled
                         ? "rounded-full px-3 sm:px-4 py-1.5 h-8 sm:h-9 text-xs"
                         : "rounded-full px-3.5 sm:px-5 py-2 h-8.5 sm:h-10 text-xs sm:text-sm"
@@ -197,11 +197,11 @@ export function Navbar() {
             <button
               type="button"
               onClick={() => setMobileMenuOpen(true)}
-              className="lg:hidden w-8.5 h-8.5 sm:w-10 sm:h-10 text-[#172554] bg-[#faf8f5] sm:bg-transparent border border-[#dfd9cc] sm:border-transparent hover:bg-slate-100 rounded-full flex items-center justify-center transition-all cursor-pointer flex-shrink-0 active:scale-95 shadow-2xs sm:shadow-none"
+              className="lg:hidden w-8.5 h-8.5 sm:w-10 sm:h-10 text-[#0494D6] bg-[#faf8f5] sm:bg-transparent border border-[#dfd9cc] sm:border-transparent hover:bg-slate-100 rounded-full flex items-center justify-center transition-all cursor-pointer flex-shrink-0 active:scale-95 shadow-2xs sm:shadow-none"
               aria-label={isEn ? "Open navigation menu" : "باز کردن منو"}
               aria-expanded={mobileMenuOpen}
             >
-              <Menu className="w-4.5 h-4.5 sm:w-5 sm:h-5 text-[#172554]" />
+              <Menu className="w-4.5 h-4.5 sm:w-5 sm:h-5 text-[#0494D6]" />
             </button>
           </div>
         </div>
@@ -228,7 +228,7 @@ export function Navbar() {
                 />
               </div>
               <div className="flex flex-col">
-                <span className="font-bold text-sm text-[#172554]">
+                <span className="font-bold text-sm text-[#0494D6]">
                   {t.brand.name}
                 </span>
                 <span className="text-[10px] text-[#8c7b64]">
@@ -241,7 +241,7 @@ export function Navbar() {
               <button
                 type="button"
                 onClick={toggleLanguage}
-                className="h-9 px-3 rounded-full border border-[#dfd9cc] bg-white text-[#172554] text-xs font-bold flex items-center gap-1.5 shadow-2xs"
+                className="h-9 px-3 rounded-full border border-[#dfd9cc] bg-white text-[#0494D6] text-xs font-bold flex items-center gap-1.5 shadow-2xs"
               >
                 <Globe className="w-3.5 h-3.5 text-[#8c7b64]" />
                 <span>{isEn ? "فارسی" : "EN"}</span>
@@ -249,7 +249,7 @@ export function Navbar() {
 
               <button
                 onClick={() => setMobileMenuOpen(false)}
-                className="w-10 h-10 rounded-full bg-white border border-[#dfd9cc] text-[#172554] flex items-center justify-center shadow-2xs hover:bg-[#faf8f5] active:scale-95 transition-all cursor-pointer"
+                className="w-10 h-10 rounded-full bg-white border border-[#dfd9cc] text-[#0494D6] flex items-center justify-center shadow-2xs hover:bg-[#faf8f5] active:scale-95 transition-all cursor-pointer"
                 aria-label={isEn ? "Close menu" : "بستن منو"}
               >
                 <X className="w-5 h-5" />
@@ -267,7 +267,7 @@ export function Navbar() {
                   key={link.href}
                   href={link.href}
                   onClick={() => setMobileMenuOpen(false)}
-                  className="min-h-[52px] px-4 rounded-2xl bg-white border border-[#e8e4db] text-[#172554] hover:bg-[#172554] hover:text-white hover:border-[#172554] transition-all flex items-center justify-between gap-3 shadow-2xs active:scale-[0.98] group"
+                  className="min-h-[52px] px-4 rounded-2xl bg-white border border-[#e8e4db] text-[#0494D6] hover:bg-[#0494D6] hover:text-white hover:border-[#0494D6] transition-all flex items-center justify-between gap-3 shadow-2xs active:scale-[0.98] group"
                 >
                   <div className="flex items-center gap-2.5">
                     <span className="text-base font-bold tracking-tight">
@@ -275,7 +275,7 @@ export function Navbar() {
                     </span>
                     {link.badge && (
                       <span
-                        className={`text-[10px] font-bold px-2.5 py-0.5 rounded-full ${link.badgeColor} group-hover:bg-white group-hover:text-[#172554] transition-colors`}
+                        className={`text-[10px] font-bold px-2.5 py-0.5 rounded-full ${link.badgeColor} group-hover:bg-white group-hover:text-[#0494D6] transition-colors`}
                       >
                         {link.badge}
                       </span>
@@ -301,7 +301,7 @@ export function Navbar() {
                       location: "mobile_drawer",
                     });
                   }}
-                  className="h-12 rounded-xl bg-[#172554] text-white flex items-center justify-center gap-2 text-xs font-bold shadow-sm active:scale-98 transition-all cursor-pointer"
+                  className="h-12 rounded-xl bg-[#0494D6] text-white flex items-center justify-center gap-2 text-xs font-bold shadow-sm active:scale-98 transition-all cursor-pointer"
                 >
                   <Phone className="w-4 h-4 text-[#c59b27]" />
                   <span dir="ltr">{t.nav.phone}</span>
@@ -328,7 +328,7 @@ export function Navbar() {
               href={hotelConfig.contact.social.instagramUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="h-11 rounded-xl bg-white border border-[#dfd9cc] text-[#172554] hover:text-[#E1306C] flex items-center justify-center gap-2 text-xs font-bold shadow-2xs active:scale-98 transition-all"
+              className="h-11 rounded-xl bg-white border border-[#dfd9cc] text-[#0494D6] hover:text-[#E1306C] flex items-center justify-center gap-2 text-xs font-bold shadow-2xs active:scale-98 transition-all"
             >
               <InstagramIcon className="w-4 h-4 text-[#E1306C]" />
               <span dir="ltr">{hotelConfig.contact.social.instagramHandle}</span>
