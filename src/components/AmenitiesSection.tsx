@@ -2,13 +2,13 @@
 
 import React, { useRef, useState, useEffect } from "react";
 import {
-  UtensilsCrossed,
-  Coffee,
-  Compass,
-  Wifi,
+  ArrowUpDown,
+  BedDouble,
   Car,
-  Luggage,
+  Coffee,
+  Clock3,
   Sparkles,
+  Shirt,
   ChevronLeft,
   ChevronRight,
 } from "lucide-react";
@@ -17,12 +17,12 @@ import { translations } from "@/lib/translations";
 import { hotelConfig } from "@/config/hotel.config";
 
 const AMENITY_ICONS = [
-  UtensilsCrossed, // 0: صبحانه اصیل در حیاط مرکزی
-  Coffee,          // 1: چای‌خانه و کافه سنتی عمارت
-  Compass,         // 2: کانسیرج و راهنمای بافت کهن
-  Wifi,            // 3: اینترنت پرسرعت فیبر نوری
-  Car,             // 4: پارکینگ اختصاصی و نگهبانی
-  Luggage,         // 5: ترانسفر و گشت‌های اختصاصی
+  Clock3,      // 0: پذیرش ۲۴ ساعته
+  ArrowUpDown, // 1: آسانسور
+  Coffee,      // 2: سالن صبحانه
+  Car,         // 3: پارکینگ سرپوشیده
+  Shirt,       // 4: روم‌سرویس و لاندری
+  BedDouble,   // 5: امکانات داخل اتاق
 ];
 
 export function AmenitiesSection() {
@@ -61,9 +61,9 @@ export function AmenitiesSection() {
   };
 
   return (
-    <section id="amenities" className="py-20 md:py-28 bg-[#faf8f5] border-t border-[#e8e4db] overflow-hidden">
+    <section id="amenities" className="py-14 md:py-28 bg-[#faf8f5] border-t border-[#e8e4db] overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className={`flex flex-col md:flex-row md:items-end justify-between gap-6 mb-10 sm:mb-12 ${isEn ? "text-left" : "text-right"}`}>
+        <div className={`flex flex-col md:flex-row md:items-end justify-between gap-6 mb-8 sm:mb-12 ${isEn ? "text-left" : "text-right"}`}>
           <div className="max-w-2xl">
             <h2 className="text-[30px] sm:text-[40px] font-bold text-[#0494D6] tracking-tight leading-tight mb-3">
               {t.amenities.heading}

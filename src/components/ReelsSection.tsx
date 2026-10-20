@@ -75,7 +75,7 @@ export function ReelsSection() {
   };
 
   return (
-    <section id="reels" className="py-10 md:py-14 relative overflow-hidden">
+    <section id="reels" className="py-8 md:py-14 relative overflow-hidden">
       {/* Pure Carousel Container with navigation controls */}
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6">
         {/* Header row with Instagram channel link */}

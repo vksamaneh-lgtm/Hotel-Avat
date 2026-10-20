@@ -108,7 +108,7 @@ export function Navbar() {
       <header
         className={`absolute sm:fixed z-50 transition-all duration-300 ease-out inset-x-0 w-full bg-white/95 backdrop-blur-md border-b border-[#dfd9cc] px-4 py-2.5 pt-[max(0.625rem,env(safe-area-inset-top))] top-0 ${
           scrolled
-            ? "sm:top-4 sm:mx-auto sm:w-[calc(100%-2rem)] lg:w-max max-w-[96vw] sm:backdrop-blur-xl sm:shadow-[0_10px_35px_-5px_rgba(4,148,214,0.12)] sm:border sm:rounded-full sm:px-5 lg:px-6 sm:py-2.5 sm:border-b-transparent"
+            ? "sm:top-4 sm:mx-auto sm:w-[calc(100%-2rem)] lg:w-max max-w-[96vw] sm:backdrop-blur-xl sm:shadow-[0_10px_35px_-5px_rgba(4,148,214,0.12)] sm:border sm:border-[#dfd9cc] sm:rounded-full sm:px-5 lg:px-6 sm:py-2.5"
             : "sm:top-8 sm:bg-white/90 sm:px-8 sm:py-3.5"
         }`}
       >

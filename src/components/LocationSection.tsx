@@ -35,10 +35,10 @@ export function LocationSection() {
   const [isExpanded, setIsExpanded] = useState<boolean>(true);
 
   return (
-    <section id="location" className="py-20 md:py-28 bg-[#faf8f5] border-t border-[#e8e4db] overflow-hidden">
+    <section id="location" className="py-14 md:py-28 bg-[#faf8f5] border-t border-[#e8e4db] overflow-hidden">
       <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
-        <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-10 sm:mb-12">
+        <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-8 sm:mb-12">
           <div className={`max-w-2xl ${isEn ? "text-left" : "text-right"}`}>
             <h2 className="text-[30px] sm:text-[40px] lg:text-[44px] font-bold leading-tight text-[#0494D6] tracking-tight mb-3">
               {t.location.heading}

@@ -160,10 +160,10 @@ export function RoomsSection() {
   };
 
   return (
-    <section id="rooms" className="py-20 sm:py-28 md:py-36 bg-white border-t border-[#dfd9cc]">
+    <section id="rooms" className="py-14 sm:py-28 md:py-36 bg-white border-t border-[#dfd9cc]">
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
         {/* Section Header - Editorial & Restrained */}
-        <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-12 sm:mb-16 pb-8 border-b border-[#dfd9cc]">
+        <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-8 sm:mb-16 pb-6 sm:pb-8 border-b border-[#dfd9cc]">
           <div className={`max-w-2xl ${isEn ? "text-left" : "text-right"}`}>
             <h2 className="text-[30px] sm:text-[42px] lg:text-[46px] font-bold leading-tight text-[#0494D6] tracking-tight mb-3">
               {t.rooms.heading}
@@ -185,7 +185,7 @@ export function RoomsSection() {
         </div>
 
         {/* Minimalist Room Category Filter Bar */}
-        <div className="flex items-center gap-2 overflow-x-auto pb-6 mb-10 scrollbar-none [scrollbar-width:none]">
+        <div className="flex items-center gap-2 overflow-x-auto pb-4 sm:pb-6 mb-6 sm:mb-10 scrollbar-none [scrollbar-width:none]">
           {t.rooms.categories?.map((cat) => {
             const isActive = filter === cat.id;
             const count = getCategoryCount(cat.id);
@@ -214,7 +214,7 @@ export function RoomsSection() {
         </div>
 
         {/* Room Showcases - Alternating Editorial Layout with Gallery */}
-        <div className="flex flex-col gap-20 sm:gap-28">
+        <div className="flex flex-col gap-12 sm:gap-28">
           {filteredRooms.map((room, index) => {
             const isEven = index % 2 === 0;
             const imagesList = room.images && room.images.length > 0 ? room.images : [room.image];

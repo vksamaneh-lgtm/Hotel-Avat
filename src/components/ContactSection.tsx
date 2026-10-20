@@ -13,10 +13,10 @@ export function ContactSection() {
   const isEn = language === "en";
 
   return (
-    <section id="contact" className="py-24 md:py-36 bg-white border-t border-[#e8e4db]">
+    <section id="contact" className="py-14 md:py-36 bg-white border-t border-[#e8e4db]">
       <div className="max-w-5xl mx-auto px-4 sm:px-6">
         {/* Section Heading - Dignified & Restrained */}
-        <div className={`max-w-2xl mb-16 md:mb-20 ${isEn ? "text-left" : "text-right"}`}>
+        <div className={`max-w-2xl mb-10 md:mb-20 ${isEn ? "text-left" : "text-right"}`}>
           <h2 className="text-[32px] sm:text-[44px] lg:text-[48px] font-bold leading-tight text-[#0494D6] tracking-tight mb-4">
             {t.contact.heading}
           </h2>

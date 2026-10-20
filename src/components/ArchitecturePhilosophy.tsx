@@ -16,7 +16,7 @@ export function ArchitecturePhilosophy() {
   return (
     <section
       id="story"
-      className="relative py-24 md:py-36 bg-[#faf8f5] text-[#0494D6] border-b border-[#e8e4db] overflow-hidden"
+      className="relative py-14 md:py-36 bg-[#faf8f5] text-[#0494D6] border-b border-[#e8e4db] overflow-hidden"
     >
       <div
         aria-hidden="true"
@@ -29,7 +29,7 @@ export function ArchitecturePhilosophy() {
 
       <div className="max-w-6xl mx-auto px-4 sm:px-6 relative z-10">
         {/* Section Heading - Dignified & Natural */}
-        <div className={`max-w-2xl mb-20 sm:mb-28 ${isEn ? "text-left" : "text-right"}`}>
+        <div className={`max-w-2xl mb-12 sm:mb-28 ${isEn ? "text-left" : "text-right"}`}>
           <h2 className="text-[32px] sm:text-[44px] lg:text-[48px] font-bold leading-[44px] sm:leading-[58px] tracking-tight text-[#0494D6] mb-4">
             {t.story.heading}
           </h2>
@@ -39,7 +39,7 @@ export function ArchitecturePhilosophy() {
         </div>
 
         {/* Parallax Cinematic Story Stream */}
-        <div className="flex flex-col gap-20 sm:gap-28 lg:gap-32">
+        <div className="flex flex-col gap-12 sm:gap-28 lg:gap-32">
           {t.story.scenes.map((scene, index) => {
             const isEven = index % 2 === 0;
             const isRoomScene = scene.id === "rooms";

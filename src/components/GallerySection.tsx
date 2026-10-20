@@ -162,10 +162,10 @@ export function GallerySection() {
   };
 
   return (
-    <section id="gallery" className="py-20 sm:py-28 bg-[#faf8f5] border-t border-[#e8e4db] relative overflow-hidden">
+    <section id="gallery" className="py-14 sm:py-28 bg-[#faf8f5] border-t border-[#e8e4db] relative overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Editorial Section Header - Dignified & Restrained */}
-        <div className={`flex flex-col md:flex-row md:items-end justify-between gap-6 mb-12 sm:mb-14 ${isEn ? "text-left" : "text-right"}`}>
+        <div className={`flex flex-col md:flex-row md:items-end justify-between gap-6 mb-8 sm:mb-14 ${isEn ? "text-left" : "text-right"}`}>
           <div className="max-w-2xl">
             <h2 className="text-[30px] sm:text-[42px] font-bold text-[#0494D6] tracking-tight leading-tight mb-3">
               {t.gallery.heading}
