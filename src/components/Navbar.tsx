@@ -128,7 +128,7 @@ export function Navbar() {
                 alt={t.brand.title}
                 fill
                 sizes="44px"
-                className="object-contain p-0.5"
+                className="object-contain scale-[1.1]"
                 priority
               />
             </div>
@@ -224,7 +224,7 @@ export function Navbar() {
                   alt={t.brand.title}
                   fill
                   sizes="36px"
-                  className="object-contain p-0.5"
+                  className="object-contain scale-[1.1]"
                 />
               </div>
               <div className="flex flex-col">

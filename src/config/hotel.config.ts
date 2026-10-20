@@ -162,10 +162,10 @@ export const hotelConfig: HotelConfig = {
 
   contact: {
     phone: {
-      raw: "",
-      international: "",
-      displayFa: "تلفن ثابت ثبت نشده",
-      displayEn: "Landline not published",
+      raw: "03132200257",
+      international: "+983132200257",
+      displayFa: "۰۳۱-۳۲۲۰۰۲۵۷",
+      displayEn: "031 322 00 257",
     },
     mobile: {
       raw: "09131196054",
@@ -185,12 +185,12 @@ export const hotelConfig: HotelConfig = {
   location: {
     cityFa: "اصفهان",
     cityEn: "Isfahan",
-    addressFa: "اصفهان، خیابان نشاط، کوچه شماره ۲۰، دومین کوچه سمت راست، شرق میدان نقش جهان",
-    addressEn: "Neshat St, No. 20 Alley, second alley on the right, east of Naqsh-e Jahan Square, Isfahan",
+    addressFa: "اصفهان، خیابان نشاط، کوچه ۲۰",
+    addressEn: "Neshat Street, Alley 20, Isfahan",
     coordinates: [32.65505, 51.68004],
     mapZoom: 16,
-    routingAlleyFa: "کوچه شماره ۲۰، دومین کوچه سمت راست",
-    routingAlleyEn: "No. 20 Alley, second alley on the right",
+    routingAlleyFa: "کوچه ۲۰",
+    routingAlleyEn: "Alley 20",
   },
 
   features: {

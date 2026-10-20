@@ -320,9 +320,9 @@ export const translations = {
     },
     contact: {
       heading: "پذیرش و ارتباط مستقیم",
-      desc: "برای استعلام ظرفیت اتاق‌ها و هماهنگی اقامت در اصفهان، با شماره همراه هتل تماس بگیرید یا در واتس‌اپ پیام بفرستید.",
+      desc: "برای استعلام ظرفیت اتاق‌ها و هماهنگی اقامت در اصفهان، با شماره ثابت یا همراه هتل تماس بگیرید یا در واتس‌اپ پیام بفرستید.",
       phoneHeading: "راه‌های ارتباطی هتل",
-      landlineLabel: "تلفن ثابت پذیرش ثبت نشده",
+      landlineLabel: "تلفن ثابت پذیرش",
       mobileLabel: "همراه پذیرش و مدیریت",
       whatsappBtn: "گفتگو در واتس‌اپ",
       instagramBtn: "اینستاگرام هتل",
@@ -342,7 +342,7 @@ export const translations = {
       desc: "برای آگاهی از ظرفیت و هماهنگی اقامت در اصفهان، با شماره همراه هتل تماس بگیرید یا در واتس‌اپ پیام ارسال فرمایید:",
       whatsappText: "ارسال پیام در واتس‌اپ",
       whatsappQuick: "پاسخگویی سریع",
-      landlineText: "تلفن ثابت ثبت نشده",
+      landlineText: "تلفن ثابت پذیرش",
       mobileText: "تماس با همراه پذیرش",
     },
     floatingCTA: {
@@ -495,9 +495,9 @@ export const translations = {
     },
     contact: {
       heading: "Reception and Direct Contact",
-      desc: "For room availability and stay coordination in Isfahan, call the hotel mobile number or send a WhatsApp message.",
+      desc: "For room availability and stay coordination in Isfahan, call the hotel landline or mobile number, or send a WhatsApp message.",
       phoneHeading: "Hotel contact options",
-      landlineLabel: "Landline not published",
+      landlineLabel: "Hotel landline",
       mobileLabel: "Reception and management mobile",
       whatsappBtn: "Chat on WhatsApp",
       instagramBtn: "Hotel Instagram",
@@ -517,7 +517,7 @@ export const translations = {
       desc: "To check availability and coordinate your stay in Isfahan, call the hotel mobile number or message us on WhatsApp:",
       whatsappText: "Message on WhatsApp",
       whatsappQuick: "Quick reply",
-      landlineText: "Landline not published",
+      landlineText: "Hotel landline",
       mobileText: "Call reception mobile",
     },
     floatingCTA: {

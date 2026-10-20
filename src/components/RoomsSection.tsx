@@ -396,8 +396,6 @@ export function RoomsSection() {
                       <span>
                         {t.rooms.capacityLabel} <strong className="text-[#0494D6] font-semibold">{room.capacity}</strong>
                       </span>
-                      <span>·</span>
-                      <span>{room.architectureFeature}</span>
                     </div>
 
                     {/* Highlights */}

@@ -55,7 +55,7 @@ export function Footer() {
                   alt={t.brand.name}
                   fill
                   sizes="(max-width: 640px) 64px, 80px"
-                  className="object-contain p-1"
+                  className="object-contain scale-[1.1]"
                 />
               </div>
             </div>
