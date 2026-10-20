@@ -159,17 +159,17 @@ const enGalleryItems = [
 ];
 
 const faReels = [
-  { id: "story-1", caption: "آشنایی با هتل آوات در شرق میدان نقش جهان", poster: "/images/reel-poster-1.jpg", videoSrc: "/videos/reel-1.mp4" },
-  { id: "story-2", caption: "اتاق‌های هتل آوات برای سفرهای یک‌نفره و خانوادگی", poster: "/images/reel-poster-2.jpg", videoSrc: "/videos/reel-2.mp4" },
-  { id: "story-3", caption: "صبحانه و خدمات روزانه هتل", poster: "/images/reel-poster-3.jpg", videoSrc: "/videos/reel-3.mp4" },
-  { id: "story-4", caption: "فاصله کوتاه هتل تا جاذبه‌های اصفهان", poster: "/images/reel-poster-4.jpg", videoSrc: "/videos/reel-4.mp4" },
+  { id: "story-1", caption: "آشنایی با هتل آوات در شرق میدان نقش جهان", poster: "/images/reel-poster-1.jpg", videoSrc: "/videos/avat-reel-1.mp4" },
+  { id: "story-2", caption: "اتاق‌های هتل آوات برای سفرهای یک‌نفره و خانوادگی", poster: "/images/reel-poster-2.jpg", videoSrc: "/videos/avat-reel-2.mp4" },
+  { id: "story-3", caption: "صبحانه و خدمات روزانه هتل", poster: "/images/reel-poster-3.jpg", videoSrc: "/videos/avat-reel-3.mp4" },
+  { id: "story-4", caption: "فاصله کوتاه هتل تا جاذبه‌های اصفهان", poster: "/images/reel-poster-4.jpg", videoSrc: "/videos/avat-reel-4.mp4" },
 ];
 
 const enReels = [
-  { id: "story-1", caption: "Meet Avat Hotel east of Naqsh-e Jahan Square", poster: "/images/reel-poster-1.jpg", videoSrc: "/videos/reel-1.mp4" },
-  { id: "story-2", caption: "Avat rooms for solo, family, and group stays", poster: "/images/reel-poster-2.jpg", videoSrc: "/videos/reel-2.mp4" },
-  { id: "story-3", caption: "Breakfast and everyday hotel services", poster: "/images/reel-poster-3.jpg", videoSrc: "/videos/reel-3.mp4" },
-  { id: "story-4", caption: "A short route from the hotel to Isfahan landmarks", poster: "/images/reel-poster-4.jpg", videoSrc: "/videos/reel-4.mp4" },
+  { id: "story-1", caption: "Meet Avat Hotel east of Naqsh-e Jahan Square", poster: "/images/reel-poster-1.jpg", videoSrc: "/videos/avat-reel-1.mp4" },
+  { id: "story-2", caption: "Avat rooms for solo, family, and group stays", poster: "/images/reel-poster-2.jpg", videoSrc: "/videos/avat-reel-2.mp4" },
+  { id: "story-3", caption: "Breakfast and everyday hotel services", poster: "/images/reel-poster-3.jpg", videoSrc: "/videos/avat-reel-3.mp4" },
+  { id: "story-4", caption: "A short route from the hotel to Isfahan landmarks", poster: "/images/reel-poster-4.jpg", videoSrc: "/videos/avat-reel-4.mp4" },
 ];
 
 export const translations = {
