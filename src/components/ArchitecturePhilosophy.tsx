@@ -45,39 +45,17 @@ export function ArchitecturePhilosophy() {
       id="story"
       className="relative py-24 md:py-36 bg-[#faf8f5] text-[#0494D6] border-b border-[#e8e4db] overflow-hidden"
     >
-      {/* Persian Geometric Gereh-Chini Vector Pattern */}
+      {/* Low-contrast Persian border motif keeps the story surface quiet. */}
       <div
-        className="absolute inset-0 pointer-events-none z-0 transition-transform duration-75 ease-out"
+        className="absolute inset-x-0 top-6 bottom-0 pointer-events-none z-0 opacity-[0.12] transition-transform duration-75 ease-out"
         style={{
           transform: `translate3d(0, ${scrollY * 0.06}px, 0)`,
+          backgroundImage: "url('/images/avat-pattern-border.png')",
+          backgroundRepeat: "repeat-x",
+          backgroundPosition: "center 10%",
+          backgroundSize: "min(800px, 100vw) auto",
         }}
-      >
-        <svg
-          className="absolute inset-0 w-full h-[140%] opacity-[0.04] text-[#0494D6]"
-          xmlns="http://www.w3.org/2000/svg"
-          width="100%"
-          height="100%"
-        >
-          <defs>
-            <pattern id="persian-tile-pattern" width="80" height="80" patternUnits="userSpaceOnUse">
-              <path
-                d="M 24 0 L 56 0 L 80 24 L 80 56 L 56 80 L 24 80 L 0 56 L 0 24 Z"
-                fill="none"
-                stroke="currentColor"
-                strokeWidth="1.2"
-              />
-              <polygon
-                points="40,16 46,34 64,40 46,46 40,64 34,46 16,40 34,34"
-                fill="none"
-                stroke="currentColor"
-                strokeWidth="1.2"
-              />
-              <circle cx="40" cy="40" r="7" fill="none" stroke="currentColor" strokeWidth="1" />
-            </pattern>
-          </defs>
-          <rect width="100%" height="100%" fill="url(#persian-tile-pattern)" />
-        </svg>
-      </div>
+      />
 
       <div className="max-w-6xl mx-auto px-4 sm:px-6 relative z-10">
         {/* Section Heading - Dignified & Natural */}

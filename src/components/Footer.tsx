@@ -28,32 +28,16 @@ export function Footer() {
 
   return (
     <footer className="relative bg-[#faf8f5] text-[#0494D6] border-t border-[#dfd9cc] pt-14 pb-10 overflow-hidden">
-      {/* Persian Gereh-Chini Geometric Background Watermark */}
-      <div className="absolute inset-0 pointer-events-none z-0 opacity-[0.035]">
-        <svg className="w-full h-full" xmlns="http://www.w3.org/2000/svg">
-          <defs>
-            <pattern id="footer-persian-pattern" width="60" height="60" patternUnits="userSpaceOnUse">
-              <path
-                d="M 30 0 L 60 30 L 30 60 L 0 30 Z"
-                fill="none"
-                stroke="currentColor"
-                strokeWidth="1.2"
-              />
-              <rect
-                x="15"
-                y="15"
-                width="30"
-                height="30"
-                fill="none"
-                stroke="currentColor"
-                strokeWidth="1"
-                transform="rotate(45 30 30)"
-              />
-              <circle cx="30" cy="30" r="5" fill="none" stroke="currentColor" strokeWidth="1" />
-            </pattern>
-          </defs>
-          <rect width="100%" height="100%" fill="url(#footer-persian-pattern)" />
-        </svg>
+      {/* A single medallion watermark adds heritage without competing with the footer content. */}
+      <div
+        className="absolute inset-0 pointer-events-none z-0 opacity-[0.055]"
+        style={{
+          backgroundImage: "url('/images/avat-pattern-medallion.png')",
+          backgroundRepeat: "no-repeat",
+          backgroundPosition: "center",
+          backgroundSize: "min(420px, 78vw) auto",
+        }}
+      >
       </div>
 
       <div className="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 flex flex-col items-center text-center">
