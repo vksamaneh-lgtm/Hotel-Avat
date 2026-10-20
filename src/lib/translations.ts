@@ -147,15 +147,27 @@ const enRoomItems = [
 ];
 
 const faGalleryItems = [
-  { id: 1, src: "/images/avat-exterior.jpeg", title: "نمای هتل آوات اصفهان", category: "hotel", categoryName: "هتل آوات" },
-  { id: 2, src: "/images/avat-reception.jpeg", title: "پذیرش و فضای ورودی هتل", category: "hotel", categoryName: "هتل آوات" },
-  { id: 3, src: "/images/avat-naqsh-jahan.jpg", title: "میدان نقش جهان اصفهان", category: "hotel", categoryName: "جاذبه‌های اصفهان" },
+  { id: 1, src: "/images/avat-gallery-breakfast-hall.webp", title: "سالن غذاخوری و صبحانه هتل", category: "services", categoryName: "خدمات هتل" },
+  { id: 2, src: "/images/avat-gallery-corridor.webp", title: "راهروی طبقات هتل آوات", category: "hotel", categoryName: "هتل آوات" },
+  { id: 3, src: "/images/avat-gallery-covered-parking.webp", title: "پارکینگ سرپوشیده هتل", category: "services", categoryName: "خدمات هتل" },
+  { id: 4, src: "/images/avat-gallery-lobby.webp", title: "لابی هتل آوات", category: "hotel", categoryName: "هتل آوات" },
+  { id: 5, src: "/images/avat-gallery-courtyard.webp", title: "حیاط و فضای نشیمن هتل", category: "hotel", categoryName: "هتل آوات" },
+  { id: 6, src: "/images/avat-gallery-breakfast-room.webp", title: "سالن صبحانه هتل آوات", category: "services", categoryName: "خدمات هتل" },
+  { id: 7, src: "/images/avat-gallery-entrance.webp", title: "نمای ورودی هتل آوات", category: "hotel", categoryName: "هتل آوات" },
+  { id: 8, src: "/images/avat-gallery-exterior.webp", title: "نمای بیرونی هتل آوات", category: "hotel", categoryName: "هتل آوات" },
+  { id: 9, src: "/images/avat-gallery-reception.webp", title: "پذیرش هتل آوات", category: "hotel", categoryName: "هتل آوات" },
 ];
 
 const enGalleryItems = [
-  { id: 1, src: "/images/avat-exterior.jpeg", title: "Avat Hotel Isfahan exterior", category: "hotel", categoryName: "Avat Hotel" },
-  { id: 2, src: "/images/avat-reception.jpeg", title: "Hotel reception and entrance", category: "hotel", categoryName: "Avat Hotel" },
-  { id: 3, src: "/images/avat-naqsh-jahan.jpg", title: "Naqsh-e Jahan Square, Isfahan", category: "hotel", categoryName: "Isfahan landmarks" },
+  { id: 1, src: "/images/avat-gallery-breakfast-hall.webp", title: "Hotel dining and breakfast hall", category: "services", categoryName: "Hotel services" },
+  { id: 2, src: "/images/avat-gallery-corridor.webp", title: "Avat Hotel floor corridor", category: "hotel", categoryName: "Avat Hotel" },
+  { id: 3, src: "/images/avat-gallery-covered-parking.webp", title: "Covered hotel parking", category: "services", categoryName: "Hotel services" },
+  { id: 4, src: "/images/avat-gallery-lobby.webp", title: "Avat Hotel lobby", category: "hotel", categoryName: "Avat Hotel" },
+  { id: 5, src: "/images/avat-gallery-courtyard.webp", title: "Hotel courtyard and seating area", category: "hotel", categoryName: "Avat Hotel" },
+  { id: 6, src: "/images/avat-gallery-breakfast-room.webp", title: "Avat Hotel breakfast room", category: "services", categoryName: "Hotel services" },
+  { id: 7, src: "/images/avat-gallery-entrance.webp", title: "Avat Hotel entrance", category: "hotel", categoryName: "Avat Hotel" },
+  { id: 8, src: "/images/avat-gallery-exterior.webp", title: "Avat Hotel exterior", category: "hotel", categoryName: "Avat Hotel" },
+  { id: 9, src: "/images/avat-gallery-reception.webp", title: "Avat Hotel reception", category: "hotel", categoryName: "Avat Hotel" },
 ];
 
 const faReels = [
