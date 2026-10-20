@@ -195,12 +195,12 @@ export const hotelConfig: HotelConfig = {
 
   features: {
     snappPay: {
-      enabled: false,
-      installmentCount: 0,
-      badgeFa: "",
-      badgeEn: "",
-      heroDescFa: "",
-      heroDescEn: "",
+      enabled: true,
+      installmentCount: 4,
+      badgeFa: "۴ قسطه با اسنپ‌پی",
+      badgeEn: "4 installments with Snapp! Pay",
+      heroDescFa: "امکان پرداخت در ۴ قسط با اسنپ‌پی (بدون کارمزد و ضامن)",
+      heroDescEn: "Pay in 4 installments with Snapp! Pay (no fee or guarantor)",
     },
     establishedEraFa: "افتتاح ۱۴۰۲ · ۷ طبقه · ۲۱ اتاق",
     establishedEraEn: "Opened in 2023 · 7 floors · 21 rooms",
