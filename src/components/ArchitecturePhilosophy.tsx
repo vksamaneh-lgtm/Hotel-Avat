@@ -18,17 +18,6 @@ export function ArchitecturePhilosophy() {
       id="story"
       className="relative py-24 md:py-36 bg-[#faf8f5] text-[#0494D6] border-b border-[#e8e4db] overflow-hidden"
     >
-      {/* Low-contrast Persian border motif keeps the story surface quiet. */}
-      <div
-        className="absolute inset-x-0 top-0 h-20 sm:h-24 pointer-events-none z-0 opacity-[0.12]"
-        style={{
-          backgroundImage: "url('/images/avat-pattern-border.png')",
-          backgroundRepeat: "repeat-x",
-          backgroundPosition: "center center",
-          backgroundSize: "min(800px, 100vw) auto",
-        }}
-      />
-
       <div className="max-w-6xl mx-auto px-4 sm:px-6 relative z-10">
         {/* Section Heading - Dignified & Natural */}
         <div className={`max-w-2xl mb-20 sm:mb-28 ${isEn ? "text-left" : "text-right"}`}>
@@ -132,6 +121,17 @@ export function ArchitecturePhilosophy() {
           })}
         </div>
 
+      </div>
+
+      {/* Three connected pattern tiles close the story section without gaps. */}
+      <div className="absolute inset-x-0 bottom-0 h-20 sm:h-24 pointer-events-none z-0 opacity-[0.12] flex gap-0 overflow-hidden">
+        {[0, 1, 2].map((tile) => (
+          <div
+            key={tile}
+            className="h-full min-w-0 flex-1 bg-center bg-cover bg-no-repeat"
+            style={{ backgroundImage: "url('/images/avat-pattern-border.png')" }}
+          />
+        ))}
       </div>
     </section>
   );
