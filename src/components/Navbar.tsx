@@ -124,7 +124,7 @@ export function Navbar() {
               }`}
             >
               <Image
-                src="/images/logo.jpg"
+                src="/images/avat-logo.jpg"
                 alt={t.brand.title}
                 fill
                 sizes="44px"
@@ -220,7 +220,7 @@ export function Navbar() {
             <div className="flex items-center gap-2.5">
               <div className="relative w-9 h-9 rounded-full overflow-hidden border border-[#dfd9cc] bg-white flex items-center justify-center flex-shrink-0">
                 <Image
-                  src="/images/logo.jpg"
+                  src="/images/avat-logo.jpg"
                   alt={t.brand.title}
                   fill
                   sizes="36px"

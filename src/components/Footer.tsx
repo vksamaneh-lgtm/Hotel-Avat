@@ -51,7 +51,7 @@ export function Footer() {
             <div className="relative mb-3 flex items-center justify-center">
               <div className="relative w-16 h-16 sm:w-20 sm:h-20 rounded-full overflow-hidden border border-[#dfd9cc] bg-white transition-all duration-300 group-hover:scale-105 group-hover:border-[#8c7b64]">
                 <Image
-                  src="/images/logo.jpg"
+                  src="/images/avat-logo.jpg"
                   alt={t.brand.name}
                   fill
                   sizes="(max-width: 640px) 64px, 80px"

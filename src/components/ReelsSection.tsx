@@ -218,7 +218,7 @@ export function ReelsSection() {
                     title={`Instagram: ${hotelConfig.contact.social.instagramHandle}`}
                   >
                     <div className="w-7 h-7 rounded-full overflow-hidden bg-white relative border border-white/30">
-                      <Image src="/images/logo.jpg" alt="Logo" fill sizes="28px" className="object-contain" />
+                      <Image src="/images/avat-logo.jpg" alt="Logo" fill sizes="28px" className="object-contain" />
                     </div>
                     <div className="flex flex-col text-right">
                       <span className="text-xs font-bold text-white drop-shadow leading-tight">{t.reels.hotelTitle}</span>
