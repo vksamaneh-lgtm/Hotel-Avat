@@ -213,7 +213,7 @@ export const translations = {
       desc: "هتل آوات در خیابان نشاط و شرق میدان نقش جهان، اقامتی ساده و آرام را در یکی از ارزشمندترین محدوده‌های گردشگری اصفهان فراهم می‌کند.",
       scenes: [
         { id: "location", title: "نزدیک به نقش جهان و تاریخ اصفهان", caption: "از هتل آوات می‌توانید با چند دقیقه پیاده‌روی به مسجد امام، مسجد شیخ لطف‌الله، میدان نقش جهان و کاخ عالی‌قاپو برسید.", image: "/images/avat-naqsh-jahan.jpg", alt: "میدان نقش جهان اصفهان" },
-        { id: "rooms", title: "اتاق‌هایی برای هر نوع سفر", caption: "از اتاق دوتخته برای یک نفر تا اتاق‌های سه‌تخته و چهار‌تخته، انتخاب اتاق با توجه به تعداد مهمانان و سبک سفر شما انجام می‌شود.", image: "/images/room-double.jpg", alt: "اتاق دوتخته هتل آوات اصفهان" },
+        { id: "rooms", title: "اتاق‌هایی برای هر نوع سفر", caption: "از اتاق دوتخته برای یک نفر تا اتاق‌های سه‌تخته و چهار‌تخته، انتخاب اتاق با توجه به تعداد مهمانان و سبک سفر شما انجام می‌شود.", image: "/images/avat-room-1.jpeg", images: ["/images/avat-room-1.jpeg", "/images/avat-room-2.jpeg", "/images/avat-room-3.jpeg", "/images/avat-room-detail-1.jpg", "/images/avat-room-detail-2.jpg"], alt: "اتاق‌های هتل آوات اصفهان" },
         { id: "breakfast", title: "صبحانه و میزبانی روزانه", caption: "پذیرش ۲۴ ساعته، سالن صبحانه، روم‌سرویس و امکانات ضروری اتاق، اقامت شما را در اصفهان ساده و قابل اتکا می‌کند.", image: "/images/breakfast.jpg", alt: "سالن صبحانه هتل آوات" },
       ],
       calloutTitle: "اقامت نزدیک به جاذبه‌های اصفهان",
@@ -387,7 +387,7 @@ export const translations = {
       desc: "Avat Hotel is located on Neshat Street, east of Naqsh-e Jahan Square, offering a simple and restful base in one of Isfahan’s most visited areas.",
       scenes: [
         { id: "location", title: "Close to Naqsh-e Jahan and Isfahan history", caption: "From Avat Hotel, Imam Mosque, Sheikh Lotfollah Mosque, Naqsh-e Jahan Square, and Ali Qapu Palace are within an easy walk.", image: "/images/avat-naqsh-jahan.jpg", alt: "Naqsh-e Jahan Square, Isfahan" },
-        { id: "rooms", title: "Rooms for every kind of trip", caption: "Choose from a twin room for one guest to triple and quadruple rooms based on the size and style of your stay.", image: "/images/room-double.jpg", alt: "Avat Hotel Isfahan double room" },
+        { id: "rooms", title: "Rooms for every kind of trip", caption: "Choose from a twin room for one guest to triple and quadruple rooms based on the size and style of your stay.", image: "/images/avat-room-1.jpeg", images: ["/images/avat-room-1.jpeg", "/images/avat-room-2.jpeg", "/images/avat-room-3.jpeg", "/images/avat-room-detail-1.jpg", "/images/avat-room-detail-2.jpg"], alt: "Avat Hotel Isfahan rooms" },
         { id: "breakfast", title: "Daily breakfast and attentive service", caption: "24-hour reception, breakfast, room service, and essential in-room amenities make staying in Isfahan straightforward and dependable.", image: "/images/breakfast.jpg", alt: "Avat Hotel breakfast room" },
       ],
       calloutTitle: "Stay close to Isfahan landmarks",

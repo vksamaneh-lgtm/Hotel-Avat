@@ -2,6 +2,7 @@
 
 import React, { useEffect, useRef, useState } from "react";
 import Image from "next/image";
+import { ChevronLeft, ChevronRight } from "lucide-react";
 import { useLanguage } from "@/context/LanguageContext";
 import { translations } from "@/lib/translations";
 
@@ -12,6 +13,7 @@ export function ArchitecturePhilosophy() {
 
   const sectionRef = useRef<HTMLElement | null>(null);
   const [scrollY, setScrollY] = useState(0);
+  const [roomImageIndex, setRoomImageIndex] = useState(0);
 
   useEffect(() => {
     let animationFrameId: number;
@@ -93,6 +95,11 @@ export function ArchitecturePhilosophy() {
           {t.story.scenes.map((scene, index) => {
             const isEven = index % 2 === 0;
             const imgParallaxFactor = isEven ? 0.05 : -0.05;
+            const isRoomScene = scene.id === "rooms";
+            const sceneImages = "images" in scene ? scene.images : [scene.image];
+            const activeImageIndex = isRoomScene
+              ? roomImageIndex % sceneImages.length
+              : 0;
 
             return (
               <div
@@ -113,12 +120,51 @@ export function ArchitecturePhilosophy() {
                     }}
                   >
                     <Image
-                      src={scene.image}
+                      src={sceneImages[activeImageIndex]}
                       alt={scene.alt}
                       fill
                       sizes="(max-width: 1024px) 100vw, 60vw"
                       className="object-cover transition-transform duration-1000 group-hover:scale-105"
                     />
+
+                    {isRoomScene && sceneImages.length > 1 && (
+                      <>
+                        <div className="absolute inset-x-0 bottom-0 flex items-center justify-between gap-4 bg-gradient-to-t from-black/55 to-transparent px-4 pb-4 pt-12">
+                          <button
+                            type="button"
+                            onClick={() =>
+                              setRoomImageIndex(
+                                (roomImageIndex - 1 + sceneImages.length) % sceneImages.length,
+                              )
+                            }
+                            aria-label={isEn ? "Previous room image" : "تصویر قبلی اتاق"}
+                            title={isEn ? "Previous room image" : "تصویر قبلی اتاق"}
+                            className="inline-flex h-10 w-10 shrink-0 items-center justify-center rounded-full border border-white/60 bg-black/30 text-white backdrop-blur-sm transition-colors hover:bg-[#0494D6] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white"
+                          >
+                            {isEn ? <ChevronLeft size={20} /> : <ChevronRight size={20} />}
+                          </button>
+
+                          <div
+                            className="font-estedad text-sm font-medium text-white"
+                            aria-live="polite"
+                          >
+                            {activeImageIndex + 1} / {sceneImages.length}
+                          </div>
+
+                          <button
+                            type="button"
+                            onClick={() =>
+                              setRoomImageIndex((roomImageIndex + 1) % sceneImages.length)
+                            }
+                            aria-label={isEn ? "Next room image" : "تصویر بعدی اتاق"}
+                            title={isEn ? "Next room image" : "تصویر بعدی اتاق"}
+                            className="inline-flex h-10 w-10 shrink-0 items-center justify-center rounded-full border border-white/60 bg-black/30 text-white backdrop-blur-sm transition-colors hover:bg-[#0494D6] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white"
+                          >
+                            {isEn ? <ChevronRight size={20} /> : <ChevronLeft size={20} />}
+                          </button>
+                        </div>
+                      </>
+                    )}
                   </div>
                 </div>
 
