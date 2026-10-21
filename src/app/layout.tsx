@@ -22,9 +22,9 @@ export const metadata: Metadata = {
   description: hotelConfig.meta.metaDescriptionFa,
   keywords: hotelConfig.meta.keywordsFa,
   icons: {
-    icon: "/images/avat-logo.jpg",
-    shortcut: "/images/avat-logo.jpg",
-    apple: "/images/avat-logo.jpg",
+    icon: "/favicon.ico",
+    shortcut: "/favicon.ico",
+    apple: "/favicon.ico",
   },
   openGraph: {
     title: hotelConfig.meta.metaTitleFa,
