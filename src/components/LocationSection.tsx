@@ -14,6 +14,7 @@ import {
 import { useLanguage } from "@/context/LanguageContext";
 import { translations } from "@/lib/translations";
 import { ATTRACTIONS_DATA } from "./HotelMap";
+import type { RouteDataByAttraction } from "./GoogleDistanceLoader";
 import { hotelConfig } from "@/config/hotel.config";
 
 // Dynamic import of Leaflet map to prevent SSR issues
@@ -26,6 +27,11 @@ const HotelMap = dynamic(() => import("./HotelMap"), {
   ),
 });
 
+// Read route distances from Google without changing the existing map UI.
+const GoogleDistanceLoader = dynamic(() => import("./GoogleDistanceLoader"), {
+  ssr: false,
+});
+
 export function LocationSection() {
   const { language } = useLanguage();
   const t = translations[language];
@@ -33,6 +39,7 @@ export function LocationSection() {
 
   const [activeAttractionIndex, setActiveAttractionIndex] = useState<number | null>(null);
   const [isExpanded, setIsExpanded] = useState<boolean>(true);
+  const [googleRoutes, setGoogleRoutes] = useState<RouteDataByAttraction>({});
 
   return (
     <section id="location" className="py-14 md:py-28 bg-[#faf8f5] border-t border-[#e8e4db] overflow-hidden">
@@ -84,9 +91,11 @@ export function LocationSection() {
         <div className="relative w-full h-[540px] sm:h-[620px] lg:h-[680px] rounded-[28px] sm:rounded-[32px] overflow-hidden border border-[#dfd9cc] shadow-xl bg-white">
           {/* Interactive Leaflet Map */}
           <div className="absolute inset-0 w-full h-full">
+            <GoogleDistanceLoader onRouteDataChange={setGoogleRoutes} />
             <HotelMap
               activeAttractionIndex={activeAttractionIndex}
               onSelectAttraction={(idx) => setActiveAttractionIndex(idx)}
+              routeData={googleRoutes}
             />
           </div>
 
@@ -161,8 +170,9 @@ export function LocationSection() {
                 {ATTRACTIONS_DATA.map((att, idx) => {
                   const isActive = activeAttractionIndex === idx;
                   const name = isEn ? att.nameEn : att.nameFa;
-                  const dist = isEn ? att.distEn : att.distFa;
-                  const time = isEn ? att.timeEn : att.timeFa;
+                  const route = googleRoutes[att.id];
+                  const dist = route ? (isEn ? route.distanceEn : route.distanceFa) : isEn ? att.distEn : att.distFa;
+                  const time = route ? (isEn ? route.timeEn : route.timeFa) : isEn ? att.timeEn : att.timeFa;
 
                   return (
                     <button
@@ -277,8 +287,9 @@ export function LocationSection() {
                 {ATTRACTIONS_DATA.map((att, idx) => {
                   const isActive = activeAttractionIndex === idx;
                   const name = isEn ? att.nameEn : att.nameFa;
-                  const dist = isEn ? att.distEn : att.distFa;
-                  const time = isEn ? att.timeEn : att.timeFa;
+                  const route = googleRoutes[att.id];
+                  const dist = route ? (isEn ? route.distanceEn : route.distanceFa) : isEn ? att.distEn : att.distFa;
+                  const time = route ? (isEn ? route.timeEn : route.timeFa) : isEn ? att.timeEn : att.timeFa;
 
                   return (
                     <button

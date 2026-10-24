@@ -13,6 +13,7 @@
 export interface HotelAttraction {
   id: number;
   coords: [number, number];
+  routeMode: "WALKING" | "DRIVING";
   nameFa: string;
   nameEn: string;
   distFa: string;
@@ -210,10 +211,11 @@ export const hotelConfig: HotelConfig = {
     {
       id: 0,
       coords: [32.65491, 51.67782],
+      routeMode: "WALKING",
       nameFa: "مسجد امام اصفهان",
       nameEn: "Imam Mosque of Isfahan",
-      distFa: "حدود ۴۳۱ متر",
-      distEn: "About 431 m",
+      distFa: "۱٫۱ کیلومتر",
+      distEn: "1.1 km",
       timeFa: "حدود ۵ دقیقه پیاده",
       timeEn: "About 5 min walk",
       icon: "🕌",
@@ -221,10 +223,11 @@ export const hotelConfig: HotelConfig = {
     {
       id: 1,
       coords: [32.65745, 51.67854],
+      routeMode: "WALKING",
       nameFa: "مسجد شیخ لطف‌الله",
       nameEn: "Sheikh Lotfollah Mosque",
-      distFa: "حدود ۵۱۶ متر",
-      distEn: "About 516 m",
+      distFa: "۱٫۲ کیلومتر",
+      distEn: "1.2 km",
       timeFa: "حدود ۶ دقیقه پیاده",
       timeEn: "About 6 min walk",
       icon: "🏛️",
@@ -232,10 +235,11 @@ export const hotelConfig: HotelConfig = {
     {
       id: 2,
       coords: [32.65790, 51.67742],
+      routeMode: "WALKING",
       nameFa: "میدان نقش جهان",
       nameEn: "Naqsh-e Jahan Square",
-      distFa: "حدود ۶۶۱ متر",
-      distEn: "About 661 m",
+      distFa: "۹۵۰ متر",
+      distEn: "950 m",
       timeFa: "حدود ۸ دقیقه پیاده",
       timeEn: "About 8 min walk",
       icon: "📍",
@@ -243,10 +247,11 @@ export const hotelConfig: HotelConfig = {
     {
       id: 3,
       coords: [32.65710, 51.67670],
+      routeMode: "WALKING",
       nameFa: "کاخ عالی‌قاپو",
       nameEn: "Ali Qapu Palace",
-      distFa: "حدود ۶۹۷ متر",
-      distEn: "About 697 m",
+      distFa: "۱٫۲ کیلومتر",
+      distEn: "1.2 km",
       timeFa: "حدود ۸ دقیقه پیاده",
       timeEn: "About 8 min walk",
       icon: "🏛️",
@@ -254,10 +259,11 @@ export const hotelConfig: HotelConfig = {
     {
       id: 4,
       coords: [32.65720, 51.67700],
+      routeMode: "DRIVING",
       nameFa: "کاخ چهل‌ستون",
       nameEn: "Chehel Sotoun Palace",
-      distFa: "حدود ۲٫۵ کیلومتر",
-      distEn: "About 2.5 km",
+      distFa: "۲٫۱ کیلومتر",
+      distEn: "2.1 km",
       timeFa: "حدود ۵ دقیقه با خودرو",
       timeEn: "About 5 min drive",
       icon: "🏛️",
@@ -265,10 +271,11 @@ export const hotelConfig: HotelConfig = {
     {
       id: 5,
       coords: [32.63697, 51.68331],
+      routeMode: "DRIVING",
       nameFa: "پل خواجو",
       nameEn: "Khaju Bridge",
-      distFa: "حدود ۲٫۴۸ کیلومتر",
-      distEn: "About 2.48 km",
+      distFa: "۲٫۲ کیلومتر",
+      distEn: "2.2 km",
       timeFa: "حدود ۴ دقیقه با خودرو",
       timeEn: "About 4 min drive",
       icon: "🌉",
@@ -276,10 +283,11 @@ export const hotelConfig: HotelConfig = {
     {
       id: 6,
       coords: [32.64600, 51.67750],
+      routeMode: "DRIVING",
       nameFa: "سی‌وسه‌پل",
       nameEn: "Si-o-se-pol Bridge",
-      distFa: "حدود ۳٫۵۶ کیلومتر",
-      distEn: "About 3.56 km",
+      distFa: "۲٫۸ کیلومتر",
+      distEn: "2.8 km",
       timeFa: "حدود ۶ دقیقه با خودرو",
       timeEn: "About 6 min drive",
       icon: "🌉",

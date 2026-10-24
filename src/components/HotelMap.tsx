@@ -4,6 +4,7 @@ import React, { useEffect, useRef } from "react";
 import "leaflet/dist/leaflet.css";
 import { useLanguage } from "@/context/LanguageContext";
 import { hotelConfig } from "@/config/hotel.config";
+import type { RouteDataByAttraction } from "./GoogleDistanceLoader";
 
 export const ATTRACTIONS_DATA = hotelConfig.attractions;
 export const HOTEL_COORDS: [number, number] = hotelConfig.location.coordinates;
@@ -48,11 +49,13 @@ export function getCurvedPath(
 interface HotelMapProps {
   activeAttractionIndex?: number | null;
   onSelectAttraction?: (idx: number | null) => void;
+  routeData?: RouteDataByAttraction;
 }
 
 export default function HotelMap({
   activeAttractionIndex = null,
   onSelectAttraction,
+  routeData = {},
 }: HotelMapProps) {
   const { language } = useLanguage();
   const isEn = language === "en";
@@ -149,8 +152,21 @@ export default function HotelMap({
       markersRef.current = [];
       ATTRACTIONS_DATA.forEach((att, idx) => {
         const attName = isEn ? att.nameEn : att.nameFa;
-        const attDist = isEn ? att.distEn : att.distFa;
-        const attTime = isEn ? att.timeEn : att.timeFa;
+        const googleRoute = routeData[att.id];
+        const attDist = googleRoute
+          ? isEn
+            ? googleRoute.distanceEn
+            : googleRoute.distanceFa
+          : isEn
+            ? att.distEn
+            : att.distFa;
+        const attTime = googleRoute
+          ? isEn
+            ? googleRoute.timeEn
+            : googleRoute.timeFa
+          : isEn
+            ? att.timeEn
+            : att.timeFa;
 
         const attIcon = L.divIcon({
           className: `attraction-pin-${idx}`,
@@ -188,7 +204,7 @@ export default function HotelMap({
         mapInstanceRef.current = null;
       }
     };
-  }, [language, isEn]);
+  }, [language, isEn, routeData]);
 
   // Handle Dynamic Diagonal Path Drawing on Active Attraction
   useEffect(() => {
